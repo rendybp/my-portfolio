@@ -13,6 +13,14 @@ const Footer = () => {
                     contact.rendibp@gmail.com
                 </div>
             </div>
+            <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
+                <p>© 2025 Rendi Buana. All rights reserved</p>
+                <ul className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
+                    <li><a target='_blank' href="https://github.com/rendybp">Github</a></li>
+                    <li><a target='_blank' href="https://instagram.com/rend.bp">Instagram</a></li>
+                    <li><a target='_blank' href="https://linkedin.com/in/rendibp-56b388258">Linkedin</a></li>
+                </ul>
+            </div>
         </div>
     )
 }
