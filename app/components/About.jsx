@@ -9,7 +9,7 @@ const About = () => {
                 <h4 className='text-center mb-2 text-lg font-ovo'>Introduction</h4>
                 <h2 className='text-center text-5xl font-ovo'>About me</h2>
 
-                <div className='flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 my-20'>
+                <div className='flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 my-16'>
                     <div className='w-64 sm:w-80 rounded-3xl'>
                         <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
                     </div>
@@ -27,8 +27,8 @@ const About = () => {
                                 </li>
                             ))}
                         </ul>
-                        <h4 className='my-6 text-gray-700 font-ovo'>Tools I use</h4>
-                        <ul className='flex items-center gap-3 sm:gap-5'>
+                        <h4 className='my-6 text-gray-700 font-ovo'>I am familiar with</h4>
+                        <ul className='grid items-center gap-3 sm:gap-5 grid-cols-[repeat(auto-fit,minmax(50px,1fr))]'>
                             {toolsData.map((tool, index)=>(
                                 <li className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500' key={index}>
                                     <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>

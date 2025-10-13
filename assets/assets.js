@@ -35,6 +35,13 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import laravel_logo from './laravel_logo.png';
+import nextjs_logo from './nextjs_logo.png';
+import react_logo from './react_logo.png';
+import python_logo from './python_logo.png';
+import flutter_logo from './flutter_logo.png';
+import tailwindcss_logo from './tailwindcss_logo.png';
+import postman_logo from './postman_logo.png';
 
 export const assets = {
     user_image,
@@ -73,7 +80,15 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    laravel_logo,
+    nextjs_logo,
+    react_logo,
+    python_logo,
+    flutter_logo,
+    tailwindcss_logo,
+    postman_logo
+
 };
 
 export const workData = [
@@ -113,5 +128,5 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.laravel_logo, assets.nextjs_logo, assets.react_logo, assets.tailwindcss_logo, assets.python_logo, assets.flutter_logo, assets.postman_logo, assets.figma, assets.git
 ];
