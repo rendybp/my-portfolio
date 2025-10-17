@@ -15,7 +15,7 @@ const About = ({isDarkMode}) => {
                 initial={{opacity: 0, y:-20}}
                 whileInView={{opacity: 1, y:0}}
                 transition={{duration: 0.5, delay:0.3}}
-                className='text-center mb-2 text-lg font-ovo'>Introduction</motion.h4>
+                className='text-center mb-1 text-lg font-ovo'>Introduction</motion.h4>
                 <motion.h2 
                 initial={{opacity: 0, y:-20}}
                 whileInView={{opacity: 1, y:0}}
@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
                     whileInView={{opacity: 1}}
                     transition={{duration: 0.6, delay:0.8}}
                     className='flex-1 max-w-2xl'>
-                        <p className='mb-10 font-ovo'>
+                        <p className='mb-10 font-ovo text-justify'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus dolores beatae asperiores ipsa nemo esse totam, sit reiciendis sapiente cumque sint ea fuga eligendi nihil vel! Fugit, deserunt corrupti facere ipsa expedita veniam est vero id aspernatur, rerum quis aut incidunt sint labore quae ab similique nisi illo at obcaecati qui vitae reiciendis itaque? Atque, ullam totam beatae aspernatur odio pariatur aliquam voluptatibus quos reiciendis, suscipit eos ea voluptatum distinctio sequi adipisci earum autem rerum accusamus ex cupiditate, sunt eum dolorum nulla ipsa. Sit nisi velit dolorum quasi officiis, odio ipsam voluptas placeat iste doloribus, culpa provident porro ab.
                         </p>
 
