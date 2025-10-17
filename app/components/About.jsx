@@ -26,12 +26,12 @@ const About = ({isDarkMode}) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8}}
-                className='flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 my-16'>
+                className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 2xl:gap-20 my-8 lg:my-7 2xl:my-16'>
                     <motion.div 
                     initial={{opacity: 0, scale: 0.9}}
                     whileInView={{opacity: 1, scale: 1}}
                     transition={{duration: 0.6}}
-                    className='w-64 sm:w-80 rounded-3xl'>
+                    className='w-48 sm:w-64 2xl:w-80 rounded-3xl flex-shrink-0'>
                         <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
                     </motion.div>
                     <motion.div 
@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
                     whileInView={{opacity: 1}}
                     transition={{duration: 0.6, delay:0.8}}
                     className='flex-1 max-w-2xl'>
-                        <p className='mb-10 font-ovo text-justify'>
+                        <p className='mb-6 lg:mb-7 2xl:mb-10 font-ovo text-justify text-sm lg:text-base leading-relaxed 2xl:leading-loose'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus dolores beatae asperiores ipsa nemo esse totam, sit reiciendis sapiente cumque sint ea fuga eligendi nihil vel! Fugit, deserunt corrupti facere ipsa expedita veniam est vero id aspernatur, rerum quis aut incidunt sint labore quae ab similique nisi illo at obcaecati qui vitae reiciendis itaque? Atque, ullam totam beatae aspernatur odio pariatur aliquam voluptatibus quos reiciendis, suscipit eos ea voluptatum distinctio sequi adipisci earum autem rerum accusamus ex cupiditate, sunt eum dolorum nulla ipsa. Sit nisi velit dolorum quasi officiis, odio ipsam voluptas placeat iste doloribus, culpa provident porro ab.
                         </p>
 
@@ -47,14 +47,14 @@ const About = ({isDarkMode}) => {
                         initial={{opacity: 0}}
                         whileInView={{opacity: 1}}
                         transition={{duration: 0.8, delay:1}}
-                        className='grid grid-cols-1 sm:grid-cols-3 gap-6'>
+                        className='grid grid-cols-1 sm:grid-cols-3 gap-4 lg:gap-5 xl:gap-6'>
                             {infoList.map(({icon, iconDark, title, description}, index) => (
                                 <motion.li 
                                 whileHover={{scale: 1.05}}
-                                className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' key={index}>
-                                    <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-7 mt-3'/>
-                                    <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
-                                    <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
+                                className='border-[0.5px] border-gray-400 rounded-xl p-6 xl:p-5 2xl:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' key={index}>
+                                    <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-6 2xl:w-7 mt-2 2xl:mt-3'/>
+                                    <h3 className='my-3 xl:my-4 font-semibold text-gray-700 dark:text-white text-base xl:text-sm 2xl:text-base'>{title}</h3>
+                                    <p className='text-gray-600 text-sm xl:text-xs 2xl:text-sm dark:text-white/80 leading-relaxed'>{description}</p>
                                 </motion.li>
                             ))}
                         </motion.ul>
@@ -62,16 +62,16 @@ const About = ({isDarkMode}) => {
                         initial={{y: 20, opacity:0}}
                         whileInView={{y:0, opacity:1}}
                         transition={{delay:1.3, duration:0.5}}
-                        className='my-6 text-gray-700 font-ovo dark:text-white/80'>I am familiar with</motion.h4>
+                        className='my-4 lg:my-5 2xl:my-6 text-gray-700 font-ovo dark:text-white/80 text-base xl:text-sm 2xl:text-base'>I am familiar with</motion.h4>
                         <motion.ul 
                         initial={{opacity:0}}
                         whileInView={{opacity:1}}
                         transition={{delay:1.5, duration:0.6}}
-                        className='grid items-center gap-3 sm:gap-5 grid-cols-[repeat(auto-fit,minmax(50px,1fr))]'>
+                        className='grid items-center gap-2 sm:gap-3 lg:gap-4 grid-cols-[repeat(auto-fit,minmax(45px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(50px,1fr))]'>
                             {toolsData.map((tool, index)=>(
                                 <motion.li 
                                 whileHover={{scale: 1.1}}
-                                className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500' key={index}>
+                                className='flex items-center justify-center w-11 sm:w-12 2xl:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500' key={index}>
                                     <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
                                 </motion.li>
                             ))}

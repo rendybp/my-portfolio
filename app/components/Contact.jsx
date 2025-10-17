@@ -53,7 +53,7 @@ const Contact = () => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{delay: 0.7, duration: 0.5}}
-                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
+                className='text-center max-w-2xl mx-auto mt-4 mb-7 font-ovo'>
                     I'd love to hear from you! If you have any question, comments, or feedback, please use the form below.
                 </motion.p>
                 <motion.form 
@@ -77,7 +77,7 @@ const Contact = () => {
                     initial={{y:100, opacity: 0}}
                     whileInView={{y: 0, opacity: 1}}
                     transition={{delay: 1.3, duration: 0.6}}
-                    rows='6' placeholder='Enter your message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90' name='message'></motion.textarea>
+                    rows='5' placeholder='Enter your message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 dark:border-white/90' name='message'></motion.textarea>
                     <motion.button 
                     whileHover={{scale: 1.05}}
                     transition={{duration: 0.3}}
