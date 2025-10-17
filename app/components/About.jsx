@@ -39,7 +39,7 @@ const About = ({isDarkMode}) => {
                     whileInView={{opacity: 1}}
                     transition={{duration: 0.6, delay:0.8}}
                     className='flex-1 max-w-2xl'>
-                        <p className='mb-6 lg:mb-7 2xl:mb-10 font-ovo text-justify text-sm lg:text-base leading-relaxed 2xl:leading-loose'>
+                        <p className='mb-6 lg:mb-7 2xl:mb-10 font-ovo text-justify leading-relaxed 2xl:leading-loose'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus dolores beatae asperiores ipsa nemo esse totam, sit reiciendis sapiente cumque sint ea fuga eligendi nihil vel! Fugit, deserunt corrupti facere ipsa expedita veniam est vero id aspernatur, rerum quis aut incidunt sint labore quae ab similique nisi illo at obcaecati qui vitae reiciendis itaque? Atque, ullam totam beatae aspernatur odio pariatur aliquam voluptatibus quos reiciendis, suscipit eos ea voluptatum distinctio sequi adipisci earum autem rerum accusamus ex cupiditate, sunt eum dolorum nulla ipsa. Sit nisi velit dolorum quasi officiis, odio ipsam voluptas placeat iste doloribus, culpa provident porro ab.
                         </p>
 
