@@ -65,4 +65,5 @@ body {
 body {
   margin: 0;
   font-family: var(--font-outfit);
+  overflow-x: hidden;
 }

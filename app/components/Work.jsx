@@ -15,7 +15,7 @@ const Work = ({isDarkMode}) => {
                 initial={{y: -20, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
                 transition={{delay: 0.3, duration: 0.5}}
-                className='text-center mb-2 text-lg font-ovo'>My Portfolio</motion.h4>
+                className='text-center mb-1 text-lg font-ovo'>My Portfolio</motion.h4>
                 <motion.h2 
                 initial={{y: -20, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
@@ -26,7 +26,7 @@ const Work = ({isDarkMode}) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{delay: 0.7, duration: 0.5}}
-                className='text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo'>
+                className='text-center max-w-2xl mx-auto mt-4 lg:mt-5 mb-8 lg:mb-12 font-ovo'>
                     Welcome to my web development portfolio ! Explore a collection of projects showcasing my expertise in web developer
                 </motion.p>
 
@@ -34,7 +34,7 @@ const Work = ({isDarkMode}) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{delay: 0.9, duration: 0.6}}
-                className='grid gap-5 my-10 grid-cols-[repeat(auto-fit,minmax(220px,1fr))] dark:text-black'>
+                className='grid gap-4 lg:gap-5 my-6 lg:my-8 xl:my-10 grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] dark:text-black'>
                     {workData.map((project,index)=>(
                         <motion.div 
                         whileHover={{scale: 1.05}}

@@ -5,19 +5,19 @@ import { motion } from "motion/react"
 
 const Header = () => {
     return (
-        <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+        <div className='w-11/12 max-w-6xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 my-5'>
             <motion.div
             initial={{scale: 0}}
             whileInView={{scale: 1}}
             transition={{duration: 0.8, type: 'spring', stiffness: 100}}
             >
-                <Image src={assets.profile_img} alt='' className='rounded-full w-32'/>
+                <Image src={assets.profile_img} alt='' className='rounded-full w-36'/>
             </motion.div>
             <motion.h3 
             initial={{y:-20, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 0.3}}
-            className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>
+            className='flex items-end gap-2 text-xl md:text-2xl font-ovo'>
                 Hi I'm Rendi Buana Perdana  <Image src={assets.hand_icon} alt='' className='w-6'/>
             </motion.h3>
             <motion.h1 
@@ -31,7 +31,7 @@ const Header = () => {
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.7}}
-            className='max-w-2xl mx-auto font-ovo'>
+            className='max-w-3xl mx-auto font-ovo'>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eligendi error provident quisquam voluptatibus rerum ea, aliquid rem dolorem, aperiam cupiditate itaque modi. Voluptatem illo possimus officiis quidem tempora totam.
             </motion.p>
 
