@@ -68,11 +68,11 @@ const About = ({isDarkMode}) => {
                         whileInView={{opacity:1}}
                         transition={{delay:1.5, duration:0.6}}
                         className='grid items-center gap-2 sm:gap-3 lg:gap-4 grid-cols-[repeat(auto-fit,minmax(45px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(50px,1fr))]'>
-                            {toolsData.map((tool, index)=>(
+                            {toolsData.map(({icon, link}, index)=>(
                                 <motion.li 
                                 whileHover={{scale: 1.1}}
                                 className='flex items-center justify-center w-11 sm:w-12 2xl:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:translate-y-1 duration-500' key={index}>
-                                    <Image src={tool} alt='Tool' className='w-5 sm:w-7'/>
+                                    <a target='_blank' href={link}><Image src={icon} alt='Tool' className='w-5 sm:w-7'/></a>
                                 </motion.li>
                             ))}
                         </motion.ul>

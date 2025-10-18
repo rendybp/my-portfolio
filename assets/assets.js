@@ -42,6 +42,7 @@ import python_logo from './python_logo.png';
 import flutter_logo from './flutter_logo.png';
 import tailwindcss_logo from './tailwindcss_logo.png';
 import postman_logo from './postman_logo.png';
+import { link } from 'motion/react-client';
 
 export const assets = {
     user_image,
@@ -128,5 +129,13 @@ export const infoList = [
 ];
 
 export const toolsData = [
-    assets.laravel_logo, assets.nextjs_logo, assets.react_logo, assets.tailwindcss_logo, assets.python_logo, assets.flutter_logo, assets.postman_logo, assets.figma, assets.git
+    {icon: assets.laravel_logo, link: 'https://laravel.com/'},
+    {icon: assets.nextjs_logo, link: 'https://nextjs.org/'},
+    {icon: assets.react_logo, link: 'https://reactjs.org/'},
+    {icon: assets.tailwindcss_logo, link: 'https://tailwindcss.com/'},
+    {icon: assets.python_logo, link: 'https://www.python.org/'},
+    {icon: assets.flutter_logo, link: 'https://flutter.dev/'},
+    {icon: assets.postman_logo, link: 'https://www.postman.com/'},
+    {icon: assets.figma, link: 'https://www.figma.com/'},
+    {icon: assets.git, link: 'https://github.com/rendybp'}
 ];
