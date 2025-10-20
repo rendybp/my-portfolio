@@ -1,10 +1,27 @@
+'use client'
+
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "motion/react"
+import WorkModal from './WorkModal'
 
 const Work = ({isDarkMode}) => {
+    const [selectedWork, setSelectedWork] = useState(null)
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const handleWorkClick = (work) => {
+        setSelectedWork(work)
+        setIsModalOpen(true)
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false)
+        setTimeout(() => setSelectedWork(null), 300) // Clear after animation
+    }
+
     return (
+        <>
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -40,6 +57,7 @@ const Work = ({isDarkMode}) => {
                         whileHover={{scale: 1.05}}
                         transition={{duration: 0.3}}
                         key={index}
+                        onClick={() => handleWorkClick(project)}
                         className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group overflow-hidden'
                         style={{backgroundImage: `url(${project.bgImage})`}}>
                             <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between transition-all duration-500 group-hover:bottom-7'>
@@ -63,6 +81,14 @@ const Work = ({isDarkMode}) => {
                 </motion.a>
             </div>
         </motion.div>
+
+        {/* Work Experience Modal */}
+        <WorkModal 
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            work={selectedWork}
+        />
+        </>
     )
 }
 
