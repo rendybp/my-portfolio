@@ -1,10 +1,27 @@
+'use client'
+
 import { assets, infoList, toolsData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { delay, motion, scale } from "motion/react"
+import InfoModal from './InfoModal'
 
 const About = ({isDarkMode}) => {
+    const [selectedInfo, setSelectedInfo] = useState(null)
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const handleInfoClick = (info) => {
+        setSelectedInfo(info)
+        setIsModalOpen(true)
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false)
+        setTimeout(() => setSelectedInfo(null), 300) // Clear after animation
+    }
+
     return (
+        <>
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -51,7 +68,9 @@ const About = ({isDarkMode}) => {
                             {infoList.map(({icon, iconDark, title, description}, index) => (
                                 <motion.li 
                                 whileHover={{scale: 1.05}}
-                                className='border-[0.5px] border-gray-400 rounded-xl p-6 xl:p-5 2xl:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' key={index}>
+                                key={index}
+                                onClick={() => handleInfoClick({icon, iconDark, title, description})}
+                                className='border-[0.5px] border-gray-400 rounded-xl p-6 xl:p-5 2xl:p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50'>
                                     <Image src={isDarkMode ? iconDark : icon} alt={title} className='w-6 2xl:w-7 mt-2 2xl:mt-3'/>
                                     <h3 className='my-3 xl:my-4 font-semibold text-gray-700 dark:text-white text-base xl:text-sm 2xl:text-base'>{title}</h3>
                                     <p className='text-gray-600 text-sm xl:text-xs 2xl:text-sm dark:text-white/80 leading-relaxed'>{description}</p>
@@ -80,6 +99,15 @@ const About = ({isDarkMode}) => {
                 </motion.div>
             </div>
         </motion.div>
+
+        {/* Info Modal */}
+        <InfoModal 
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            info={selectedInfo}
+            isDarkMode={isDarkMode}
+        />
+        </>
     )
 }
 
