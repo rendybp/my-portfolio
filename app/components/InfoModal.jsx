@@ -474,7 +474,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.4 + catIndex * 0.1 + techIndex * 0.05, duration: 0.3 }}
                                 whileHover={{ scale: 1.02 }}
-                                className='p-4 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-850 rounded-lg border border-gray-200 dark:border-gray-700'
+                                className='p-4 bg-gradient-to-r from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 rounded-lg border border-gray-200 dark:border-gray-700'
                             >
                                 <div className='flex items-start justify-between mb-2'>
                                     <div>
