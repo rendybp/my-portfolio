@@ -928,13 +928,13 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                     transition={{ delay: 0.1, duration: 0.4 }}
                                     className='mb-6'
                                 >
-                                    <div className='flex items-start gap-4 mb-4'>
+                                    <div className='flex flex-col sm:flex-row items-start gap-4 mb-4'>
                                         <motion.div 
                                             whileHover={{ rotate: 360 }}
                                             transition={{ duration: 0.6 }}
                                             className='flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg'
                                         >
-                                            <Image src={isDarkMode ? info.iconDark : info.icon} alt={info.title} className='w-8 h-8' />
+                                            <Image src={info.iconDark} alt={info.title} className='w-8 h-8' />
                                         </motion.div>
                                         <div className='flex-1'>
                                             <h2 className='text-3xl font-bold text-gray-900 dark:text-white mb-1'>{details.fullTitle}</h2>
