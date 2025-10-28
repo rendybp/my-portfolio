@@ -4,16 +4,16 @@ import React from 'react'
 import { motion, AnimatePresence } from 'motion/react'
 
 const Toast = ({ message, type, isVisible, onClose }) => {
-    // Auto close after 5 seconds
+    // Auto close after 5 seconds - but ONLY for success and error states, NOT for loading
     React.useEffect(() => {
-        if (isVisible) {
+        if (isVisible && type !== 'loading') {
             const timer = setTimeout(() => {
                 onClose()
             }, 5000)
             
             return () => clearTimeout(timer)
         }
-    }, [isVisible, onClose])
+    }, [isVisible, type, onClose])
 
     const getToastStyle = () => {
         switch (type) {
@@ -112,7 +112,7 @@ const Toast = ({ message, type, isVisible, onClose }) => {
                                     whileHover={{ scale: 1.1, rotate: 90 }}
                                     whileTap={{ scale: 0.9 }}
                                     onClick={onClose}
-                                    className='flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors'
+                                    className='flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/20 transition-colors cursor-pointer'
                                 >
                                     <svg className='w-5 h-5' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
                                         <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M6 18L18 6M6 6l12 12' />
