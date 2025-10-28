@@ -1,33 +1,53 @@
+'use client'
+
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { useState } from 'react';
 import { motion } from "motion/react"
+import Toast from './Toast'
 
 const Contact = () => {
 
-    const [result, setResult] = useState("");
+    const [toastMessage, setToastMessage] = useState("");
+    const [toastType, setToastType] = useState(""); // 'success', 'loading', 'error'
+    const [showToast, setShowToast] = useState(false);
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        setResult("Sending....");
+        
+        // Show loading toast
+        setToastMessage("Sending your message...");
+        setToastType("loading");
+        setShowToast(true);
+        
         const formData = new FormData(event.target);
-
         formData.append("access_key", "a4f45d36-aa0e-4332-84f9-da9d6cc48202");
 
-        const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData
-        });
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
 
-        const data = await response.json();
+            const data = await response.json();
 
-        if (data.success) {
-        setResult("Form Submitted Successfully");
-        event.target.reset();
-        } else {
-        console.log("Error", data);
-        setResult(data.message);
+            if (data.success) {
+                // Show success toast
+                setToastMessage("Message Sent Successfully!");
+                setToastType("success");
+                event.target.reset();
+            } else {
+                // Show error toast
+                console.log("Error", data);
+                setToastMessage(data.message || "Failed to send message");
+                setToastType("error");
+            }
+        } catch (error) {
+            // Show error toast for network errors
+            console.error("Network error", error);
+            setToastMessage("Network error. Please try again.");
+            setToastType("error");
         }
     };
 
@@ -84,12 +104,16 @@ const Contact = () => {
                     type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'>
                         Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'/>
                     </motion.button>
-
-                    <p className='mt-4'>
-                        {result}
-                    </p>
                 </motion.form>
             </div>
+
+            {/* Toast Notification */}
+            <Toast 
+                message={toastMessage}
+                type={toastType}
+                isVisible={showToast}
+                onClose={() => setShowToast(false)}
+            />
         </motion.div>
     )
 }

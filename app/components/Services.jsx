@@ -1,10 +1,27 @@
+'use client'
+
 import { assets, serviceData } from '@/assets/assets'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "motion/react"
+import ServiceModal from './ServiceModal'
 
 const Services = () => {
+    const [selectedService, setSelectedService] = useState(null)
+    const [isModalOpen, setIsModalOpen] = useState(false)
+
+    const handleServiceClick = (service) => {
+        setSelectedService(service)
+        setIsModalOpen(true)
+    }
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false)
+        setTimeout(() => setSelectedService(null), 300) // Clear after animation
+    }
+
     return (
+        <>
         <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -38,20 +55,36 @@ const Services = () => {
                     {serviceData.map(({icon, title, description, link}, index)=>(
                         <motion.div 
                         whileHover={{scale: 1.05}}
-                        key={index} className='border border-gray-400 rounded-lg px-6 py-8 lg:px-8 lg:py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
+                        key={index} 
+                        onClick={() => handleServiceClick({icon, title, description, link})}
+                        className='border border-gray-400 rounded-lg px-6 py-8 lg:px-8 lg:py-12 hover:shadow-black cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 dark:hover:bg-darkHover dark:hover:shadow-white'>
                             <Image src={icon} alt='' className='w-8 lg:w-10'/>
                             <h3 className='text-lg my-3 lg:my-4 text-gray-700 dark:text-white'>{title}</h3>
                             <p className='text-sm text-gray-600 leading-relaxed dark:text-white/80'>
                                 {description}
                             </p>
-                            <a href={link} className='flex items-center gap-2 text-sm mt-4 lg:mt-5'>
+                            <button 
+                                onClick={(e) => {
+                                    e.stopPropagation()
+                                    handleServiceClick({icon, title, description, link})
+                                }}
+                                className='flex items-center gap-2 text-sm mt-4 lg:mt-5 hover:gap-3 transition-all'
+                            >
                                 Read more <Image src={assets.right_arrow} alt='' className='w-4'/>
-                            </a>
+                            </button>
                         </motion.div>
                     ))}
                 </motion.div>
             </div>
         </motion.div>
+
+        {/* Service Modal */}
+        <ServiceModal 
+            isOpen={isModalOpen}
+            onClose={handleCloseModal}
+            service={selectedService}
+        />
+        </>
     )
 }
 

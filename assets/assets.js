@@ -94,23 +94,23 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Web Developer',
+        description: 'ajakonline.com',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'Social Media Administrator',
+        description: 'Hitz Barbershop',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'Administrative Staff',
+        description: 'State Junior High School 1 Kartasura',
         bgImage: '/work-3.png',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Finance Administrator',
+        description: 'State Junior High School 1 Kartasura',
         bgImage: '/work-4.png',
     },
 ]
