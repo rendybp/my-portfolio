@@ -32,7 +32,7 @@ const Header = () => {
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.7}}
             className='max-w-3xl mx-auto font-ovo'>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, eligendi error provident quisquam voluptatibus rerum ea, aliquid rem dolorem, aperiam cupiditate itaque modi. Voluptatem illo possimus officiis quidem tempora totam.
+                I'm a web developer with a strong foundation in Laravel, JavaScript, and modern frameworks. With experience in both software development and finance administration, I'm passionate about creating efficient, user-friendly, and data-driven web solutions. My goal is to blend technology and precision to help organizations work smarter and achieve measurable results.
             </motion.p>
 
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
@@ -45,7 +45,7 @@ const Header = () => {
                 initial={{y:30, opacity: 0}}
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.6, delay: 1.2}}
-                href="/sample-resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>My Resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
+                href="/resume-rendi.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>My Resume <Image src={assets.download_icon} alt='' className='w-4'/></motion.a>
             </div>
         </div>
     )

@@ -26,7 +26,7 @@ const About = ({isDarkMode}) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 1}}
-        id='about' className='w-full px-6 lg:px-8 py-10 scroll-mt-20'>
+        id='about' className='w-full px-6 lg:px-8 py-7 2xl:py-10 scroll-mt-20'>
             <div className='mx-auto max-w-6xl'>
                 <motion.h4 
                 initial={{opacity: 0, y:-20}}
@@ -43,7 +43,7 @@ const About = ({isDarkMode}) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{duration: 0.8}}
-                className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 2xl:gap-20 my-8 lg:my-7 2xl:my-16'>
+                className='flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 2xl:gap-20 my-8 lg:my-7 2xl:my-10'>
                     <motion.div 
                     initial={{opacity: 0, scale: 0.9}}
                     whileInView={{opacity: 1, scale: 1}}
@@ -57,7 +57,7 @@ const About = ({isDarkMode}) => {
                     transition={{duration: 0.6, delay:0.8}}
                     className='flex-1 max-w-2xl'>
                         <p className='mb-6 lg:mb-7 2xl:mb-10 font-ovo text-justify leading-relaxed 2xl:leading-loose'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui minus dolores beatae asperiores ipsa nemo esse totam, sit reiciendis sapiente cumque sint ea fuga eligendi nihil vel! Fugit, deserunt corrupti facere ipsa expedita veniam est vero id aspernatur, rerum quis aut incidunt sint labore quae ab similique nisi illo at obcaecati qui vitae reiciendis itaque? Atque, ullam totam beatae aspernatur odio pariatur aliquam voluptatibus quos reiciendis, suscipit eos ea voluptatum distinctio sequi adipisci earum autem rerum accusamus ex cupiditate, sunt eum dolorum nulla ipsa. Sit nisi velit dolorum quasi officiis, odio ipsam voluptas placeat iste doloribus, culpa provident porro ab.
+                            I am a detail-oriented and versatile professional with over five years of combined experience in administration, finance management, and web development. Skilled in managing school financial operations and ensuring compliance through ARKAS and other government systems, I bring a structured and analytical approach to every task. In addition, I have developed efficient and user-friendly web applications using Laravel, WordPress, and modern JavaScript frameworks, with a focus on functionality, scalability, and user experience. I'm passionate about applying technology to improve workflow efficiency, data accuracy, and organizational performance. My multidisciplinary background allows me to bridge the gap between technical development and operational management, transforming complex ideas into practical, impactful digital solutions.
                         </p>
 
                         <motion.ul 
