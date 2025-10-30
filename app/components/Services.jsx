@@ -44,7 +44,7 @@ const Services = () => {
                 whileInView={{opacity: 1}}
                 transition={{delay: 0.7, duration: 0.5}}
                 className='text-center max-w-2xl mx-auto mt-4 2xl:mt-5 mb-8 2xl:mb-12 font-ovo'>
-                    I am a web developer from Indonesia with 5 years of experience in various programming language such as Javascript, PHP, React, Laravel, etc.
+                    I am a web developer and administrative professional from Indonesia with over five years of experience in software development, data management, and organizational administration.
                 </motion.p>
 
                 <motion.div 
