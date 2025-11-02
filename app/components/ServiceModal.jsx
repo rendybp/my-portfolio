@@ -52,17 +52,37 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                 ],
                 deliverables: ['iOS and Android apps', 'Backend integration', 'App store deployment', 'Maintenance and updates']
             },
-            'UI/UX design': {
-                fullDescription: 'UI/UX design focuses on creating a seamless user experience through thoughtful interface design. It combines visual design, interaction design, and user research to create products that are both beautiful and functional.',
-                technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision', 'Principle', 'Framer', 'Prototyping Tools'],
-                features: [
-                    'User Research - Understanding your target audience and their needs',
-                    'Wireframing & Prototyping - Creating interactive mockups before development',
-                    'Visual Design - Beautiful, on-brand interface designs',
-                    'Usability Testing - Ensuring designs work for real users',
-                    'Design Systems - Consistent, scalable design components'
+            'Administrative Services': {
+                fullDescription: 
+                    'Administrative services focus on organizing, documenting, and managing daily operational tasks within an organization. I help businesses, schools, or professionals streamline their administrative workflows through accurate data processing, well-structured documentation, and efficient digital tools that ensure clarity and productivity.',
+
+                technologies: [
+                    'Microsoft Excel',
+                    'Microsoft Word',
+                    'Microsoft PowerPoint',
+                    'Canva',
+                    'Notion',
+                    'Zoom',
+                    'Google Workspace (Docs, Sheets, Forms, Drive)',
+                    'Email & Correspondence Management Tools',
+                    'Digital Archiving Systems'
                 ],
-                deliverables: ['Design mockups', 'Interactive prototypes', 'Design system', 'Design specifications']
+
+                features: [
+                    'Data Management - Collecting, processing, and organizing data for better accessibility and reporting',
+                    'Document Preparation - Creating formal letters, reports, and administrative materials with clarity and accuracy',
+                    'Scheduling & Coordination - Managing calendars, meetings, and event logistics efficiently',
+                    'Record Keeping - Maintaining structured digital and physical archives for easy retrieval',
+                    'Presentation & Reporting - Designing professional reports and visual materials to support decision-making'
+                ],
+
+                deliverables: [
+                    'Administrative & Financial Documents',
+                    'Organized Data Spreadsheets',
+                    'Meeting and Event Schedules',
+                    'Presentation Slides and Reports',
+                    'Document Templates and Checklists'
+                ]
             },
             'Graphics design': {
                 fullDescription: 'Creative design solutions to enhance visual communication through compelling graphics, branding materials, and digital assets. From logos to marketing materials, I create designs that effectively communicate your message.',

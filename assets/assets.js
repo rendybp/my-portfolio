@@ -29,7 +29,7 @@ import close_black from './close-black.png';
 import close_white from './close-white.png';
 import web_icon from './web-icon.png';
 import mobile_icon from './mobile-icon.png';
-import ui_icon from './ui-icon.png';
+import admin_icon from './admin-icon.png';
 import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
@@ -76,7 +76,7 @@ export const assets = {
     close_white,
     web_icon,
     mobile_icon,
-    ui_icon,
+    admin_icon,
     graphics_icon,
     right_arrow,
     send_icon,
@@ -118,7 +118,7 @@ export const workData = [
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
+    { icon: assets.admin_icon, title: 'Administrative Services', description: 'Administrative services focus on organizing, documenting, and managing daily operational...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
 ]
 
