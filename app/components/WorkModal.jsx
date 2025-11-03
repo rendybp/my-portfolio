@@ -86,65 +86,89 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                 ]
             },
             'Administrative Staff': {
-                company: 'State Junior High School 1 Kartasura',
-                period: 'August 2018 - February 2020',
-                duration: '1 year 7 months',
-                employmentType: 'Contract',
+                company: 'SMP Negeri 1 Kartasura',
+                period: 'Aug 2020 - Jun 2025',
+                duration: '4 years 11 months',
+                employmentType: 'Full-time',
                 location: 'Kartasura, Sukoharjo, Central Java, Indonesia',
-                overview: 'Provided comprehensive administrative support to ensure smooth daily operations of the school, managing student records, coordinating events, and supporting academic administration.',
+                overview: 'Provided comprehensive administrative and clerical support to ensure the smooth operation of school activities. Managed student and staff records, handled documentation, and assisted in organizing academic and extracurricular programs while maintaining compliance with educational standards.',
                 responsibilities: [
-                    'Managed student enrollment and registration processes',
-                    'Maintained and updated student academic records and databases',
-                    'Coordinated school events and parent-teacher meetings',
-                    'Processed documentation for student certifications and transfers',
-                    'Assisted teachers with administrative tasks and report preparation',
-                    'Managed correspondence with parents and external stakeholders',
-                    'Organized and archived school documents and records',
-                    'Supported the principal with scheduling and calendar management'
+                    'Handled staff and student administration, attendance records, and official documentation to ensure accurate and up-to-date personnel data.',
+                    'Drafted and processed official correspondence, reports, and government documentation with accuracy and timeliness.',
+                    'Managed incoming and outgoing letters, archives, and digital records for easy retrieval and compliance with school procedures.',
+                    'Supported front office operations by welcoming guests, providing public information, and coordinating external communications.',
+                    'Assisted teachers and school leaders with report preparation, administrative tasks, and document formatting.',
+                    'Coordinated logistical and administrative support for school events, meetings, and ceremonies including academic, religious, and extracurricular activities.',
+                    'Monitored inventory of office supplies and assisted in basic procurement and budget documentation processes.'
                 ],
                 achievements: [
-                    'Digitized 5,000+ student records, improving data accessibility',
-                    'Reduced document processing time by 50%',
-                    'Successfully coordinated 10+ large-scale school events',
-                    'Implemented new filing system for better organization'
+                    'Recognized by school management for reliability, professionalism, and attention to detail in administrative duties.',
+                    'Streamlined administrative filing and record management system, improving document accessibility and workflow efficiency.',
+                    'Maintained consistent accuracy in student and staff data reporting across multiple academic years.',
+                    'Successfully supported the implementation of digital data systems and online form submissions to simplify school administration processes.'
                 ],
-                skills: ['Microsoft Office', 'Data Entry', 'Record Management', 'Event Coordination', 'Communication', 'Time Management', 'Database Management', 'Customer Service'],
+                skills: [
+                    'Administrative Management',
+                    'Microsoft Office (Word, Excel, PowerPoint)',
+                    'Data Entry & Record Keeping',
+                    'Official Correspondence Writing',
+                    'Document Archiving',
+                    'Communication & Coordination',
+                    'Office Management',
+                    'Customer Service',
+                    'Time Management',
+                    'Event Organization'
+                ],
                 projects: [
-                    'Student Records Digitization Project',
-                    'Annual School Event Coordination',
-                    'Parent Communication System',
-                    'Document Management System Implementation'
+                    'Implementation of digital archiving system for school documentation',
+                    'Administrative support for PPDB (Student Admission) process',
+                    'Coordination and documentation of school religious and extracurricular programs',
+                    'Management of student record updates and attendance tracking system'
                 ]
+
             },
             'Finance Administrator': {
-                company: 'State Junior High School 1 Kartasura',
-                period: 'August 2017 - July 2018',
-                duration: '1 year',
-                employmentType: 'Contract',
+                company: 'SMP Negeri 1 Kartasura',
+                period: 'Jan 2022 - Jun 2025',
+                duration: '3 years 6 months',
+                employmentType: 'Full-time',
                 location: 'Kartasura, Sukoharjo, Central Java, Indonesia',
-                overview: 'Managed financial operations and bookkeeping for the school, ensuring accurate financial records, budget tracking, and compliance with government regulations for educational institutions.',
+                overview: 'Handled the recording, documentation, and reporting of the school\'s BOS financial activities in compliance with government accounting standards. Responsible for preparing budgets, tracking transactions, and maintaining accurate and transparent financial records using ARKAS and Excel.',
                 responsibilities: [
-                    'Processed student fee payments and maintained payment records',
-                    'Prepared monthly financial reports and budget tracking',
-                    'Managed petty cash and expense reimbursements',
-                    'Coordinated with government agencies for funding and grants',
-                    'Maintained accurate ledgers and financial documentation',
-                    'Assisted in annual budget planning and allocation',
-                    'Processed vendor payments and managed supplier invoices',
-                    'Ensured compliance with financial regulations and policies'
+                    'Managed the complete operational cycle of BOS funds exceeding IDR 500 million per semester using ARKAS.',
+                    'Planned and developed annual school budgets in collaboration with the principal and education committee.',
+                    'Recorded, tracked, and verified all incoming and outgoing financial transactions to ensure accuracy and compliance.',
+                    'Prepared and submitted monthly and semester financial reports using ARKAS and Microsoft Excel.',
+                    'Ensured proper tax reporting, withholding, and remittance in accordance with national financial regulations.',
+                    'Collected and organized payment receipts and supporting documents for audit and accountability purposes.',
+                    'Digitized financial records and maintained secure archives for long-term documentation and compliance audits.',
+                    'Provided administrative and documentation support for financial audits and school reporting activities.'
                 ],
                 achievements: [
-                    'Maintained 100% accuracy in financial reporting',
-                    'Streamlined payment processing, reducing delays by 70%',
-                    'Successfully managed budget of IDR 500M+ annually',
-                    'Implemented digital payment tracking system'
+                    'Maintained 100% compliance and accuracy in BOS financial reporting using ARKAS and Excel.',
+                    'Successfully managed and tracked BOS fund allocations exceeding IDR 500 million per semester with zero audit findings.',
+                    'Developed a consistent workflow for report submission, reducing delays and errors in accountability processes.',
+                    'Improved documentation clarity through structured archiving and naming conventions for financial records.',
+                    'Improved reporting efficiency by integrating Excel-based templates with ARKAS data exports for faster accountability preparation.'
                 ],
-                skills: ['Accounting', 'Bookkeeping', 'Microsoft Excel', 'Financial Reporting', 'Budget Management', 'Data Analysis', 'Attention to Detail', 'Financial Compliance'],
+                skills: [
+                    'Financial Administration',
+                    'Budget Planning & Management',
+                    'Accounting & Bookkeeping',
+                    'Microsoft Excel',
+                    'ARKAS (School Finance System)',
+                    'Tax Reporting & Compliance',
+                    'Data Accuracy',
+                    'Documentation & Archiving',
+                    'Attention to Detail',
+                    'Regulatory Compliance'
+                ],
                 projects: [
-                    'Digital Financial Record System',
-                    'Budget Optimization Initiative',
-                    'Automated Payment Tracking',
-                    'Annual Financial Audit Support'
+                    'Annual BOS Fund Planning and Budget Allocation Process',
+                    'Digital Archiving and Reporting System for Financial Documentation',
+                    'Monthly and Semester Financial Accountability Reports (ARKAS-based)',
+                    'Compilation of Tax Reporting and Accountability Documentation',
+                    'Financial Audit Preparation and Compliance Documentation',
                 ]
             }
         }
