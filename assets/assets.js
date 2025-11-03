@@ -97,21 +97,25 @@ export const workData = [
         title: 'Web Developer',
         description: 'ajakonline.com',
         bgImage: '/work-1.png',
+        bgImageBIG: '/work-1-big.png',
     },
     {
         title: 'Social Media Administrator',
         description: 'Hitz Barbershop',
         bgImage: '/work-2.png',
+        bgImageBIG: '/work-2-big.png',
     },
     {
         title: 'Administrative Staff',
-        description: 'State Junior High School 1 Kartasura',
+        description: 'SMP Negeri 1 Kartasura',
         bgImage: '/work-3.png',
+        bgImageBIG: '/work-3-big.png',
     },
     {
         title: 'Finance Administrator',
-        description: 'State Junior High School 1 Kartasura',
+        description: 'SMP Negeri 1 Kartasura',
         bgImage: '/work-4.png',
+        bgImageBIG: '/work-4-big.png',
     },
 ]
 

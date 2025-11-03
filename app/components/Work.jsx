@@ -43,8 +43,8 @@ const Work = ({isDarkMode}) => {
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 transition={{delay: 0.7, duration: 0.5}}
-                className='text-center max-w-2xl mx-auto mt-4 lg:mt-5 mb-8 lg:mb-12 font-ovo'>
-                    Welcome to my web development portfolio ! Explore a collection of projects showcasing my expertise in web developer
+                className='text-center max-w-4xl mx-auto mt-4 lg:mt-5 mb-8 lg:mb-12 font-ovo'>
+                    Welcome to my professional portfolio! Explore my work experience in web development, administration, and finance management - combining technical expertise with strong organizational and analytical skills.
                 </motion.p>
 
                 <motion.div 

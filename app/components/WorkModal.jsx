@@ -207,7 +207,7 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                                     {/* Background Banner */}
                                     <div 
                                         className='h-32 lg:h-48 rounded-xl bg-cover bg-center relative overflow-hidden'
-                                        style={{backgroundImage: `url(${work.bgImage})`}}
+                                        style={{backgroundImage: `url(${work.bgImageBIG})`}}
                                     >
                                         <div className='absolute inset-0 bg-gradient-to-t from-black/70 to-black/20'></div>
                                     </div>
