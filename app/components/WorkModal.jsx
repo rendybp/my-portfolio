@@ -29,32 +29,35 @@ const WorkModal = ({ isOpen, onClose, work }) => {
         const details = {
             'Web Developer': {
                 company: 'ajakonline.com',
-                period: 'January 2022 - December 2023',
-                duration: '2 years',
-                employmentType: 'Full-time',
+                period: 'Jul 2019 - Jun 2020',
+                duration: '1 years',
+                employmentType: 'Internship for 6 months, then part-time',
                 location: 'Surakarta, Central Java, Indonesia',
-                overview: 'Led the development and maintenance of the ajakonline.com e-commerce platform, focusing on creating seamless user experiences and implementing robust backend solutions.',
+                overview: 'Contributed to the rapid development of client websites using WordPress and Elementor, focusing on functionality, design consistency, and SEO optimization. Collaborated with marketing and design teams to create landing pages and promotional sites tailored to client goals.',
                 responsibilities: [
-                    'Developed and maintained responsive web applications using Laravel and React',
-                    'Collaborated with UI/UX designers to implement pixel-perfect designs',
-                    'Optimized website performance, reducing load time by 40%',
-                    'Integrated payment gateways and third-party APIs',
-                    'Implemented RESTful APIs for mobile app integration',
-                    'Conducted code reviews and mentored junior developers',
-                    'Managed database design and optimization using MySQL'
+                    'Developed and customized 10+ client websites using WordPress, Elementor, and various plugins such as LandingPress and WooCommerce.',
+                    'Created responsive, SEO-friendly landing pages optimized for speed and brand consistency.',
+                    'Configured website structures, menus, and plugin integrations for functionality and performance.',
+                    'Collaborated with marketing and design teams to ensure cohesive visuals and messaging across websites.',
+                    'Edited and maintained web content, images, and promotional materials to meet campaign objectives.',
+                    'Implemented minor CSS and layout adjustments to improve user experience and interface clarity.',
+                    'Provided post-launch support, including content updates and troubleshooting plugin or layout issues.'
                 ],
                 achievements: [
-                    'Successfully launched 3 major feature updates',
-                    'Improved website conversion rate by 25%',
-                    'Reduced bug reports by 60% through comprehensive testing',
-                    'Implemented automated deployment pipeline using CI/CD'
+                    'Successfully developed and delivered 10+ landing pages with an average one-day turnaround time per page while maintaining high functionality and brand consistency.',
+                    'Improved search visibility through structured SEO practices, metadata optimization, and keyword targeting.',
+                    'Enhanced client satisfaction by achieving consistent website performance and aesthetic alignment with branding.',
+                    'Contributed to increasing client engagement through effective design, content optimization, and clear navigation.'
                 ],
-                skills: ['Laravel', 'React', 'JavaScript', 'PHP', 'MySQL', 'REST API', 'Git', 'CSS3', 'Tailwind CSS', 'jQuery'],
+
+                skills: ['Web Development', 'Web Design', 'WordPress', 'WordPress Design', 'WordPress Theme Customization', 'Elementor', 'LandingPress', 'WooCommerce', 'SEO Basics', 'Plugin Configuration', 'HTML', 'CSS',  'Content Management', 'Image Editing', 'Digital Marketing'],
                 projects: [
-                    'E-commerce Platform Redesign',
-                    'Customer Dashboard Implementation',
-                    'Payment Gateway Integration',
-                    'Real-time Order Tracking System'
+                    'Kenyang Pet - Online Pet Store Website',
+                    'Djogja Enjoy Transport & Tour Website',
+                    'Nutrisi Vitalion - Product Landing Page',
+                    'Biohalty - Herbal Product Website',
+                    'SMK Muhammadiyah Susukan - School Website',
+                    'Doc Broiler - Poultry Business Website'
                 ]
             },
             'Social Media Administrator': {
@@ -63,28 +66,28 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                 duration: '1 year 10 months',
                 employmentType: 'Part-time',
                 location: 'Surakarta, Central Java, Indonesia',
-                overview: 'Managed social media presence and digital marketing strategies for Hitz Barbershop, a popular grooming establishment in Surakarta, focusing on brand awareness and customer engagement.',
+                overview: 'lorem ipsum dolor sit amet',
                 responsibilities: [
-                    'Created and managed content for Instagram, Facebook, and TikTok',
-                    'Designed promotional graphics and videos for social media campaigns',
-                    'Responded to customer inquiries and managed online bookings',
-                    'Analyzed social media metrics and prepared monthly performance reports',
-                    'Coordinated with photographers for professional content creation',
-                    'Managed paid advertising campaigns across social platforms',
-                    'Developed content calendar and scheduled posts for optimal engagement'
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet'
                 ],
                 achievements: [
-                    'Grew Instagram followers from 2,000 to 15,000 in 18 months',
-                    'Increased customer bookings through social media by 150%',
-                    'Achieved 300% engagement rate increase through strategic content',
-                    'Successfully launched 5+ viral marketing campaigns'
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
                 ],
                 skills: ['Social Media Marketing', 'Content Creation', 'Adobe Photoshop', 'Canva', 'Video Editing', 'Facebook Ads', 'Instagram Marketing', 'Analytics', 'Customer Service'],
                 projects: [
-                    'Brand Identity Social Campaign',
-                    'Customer Testimonial Video Series',
-                    'Interactive Contest Campaigns',
-                    'Influencer Collaboration Program'
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
+                    'lorem ipsum dolor sit amet',
                 ]
             },
             'Administrative Staff': {
