@@ -61,33 +61,28 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                 ]
             },
             'Social Media Administrator': {
-                company: 'Hitz Barbershop',
-                period: 'March 2020 - December 2021',
-                duration: '1 year 10 months',
-                employmentType: 'Part-time',
-                location: 'Surakarta, Central Java, Indonesia',
-                overview: 'lorem ipsum dolor sit amet',
+                company: 'Hitz Barbershop & Black White Cleaner',
+                period: 'Dec 2019 - Jan 2020',
+                duration: '1 month',
+                employmentType: 'Part-time (Remote)',
+                location: 'Bandung, West Java, Indonesia',
+                overview: 'Created and managed social media content to strengthen brand presence and customer engagement for both the barbershop and shoe cleaning services. Focused on consistent visual identity and effective content scheduling.',
                 responsibilities: [
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet'
+                    'Designed promotional and educational posts using Adobe Illustrator and Photoshop.',
+                    'Created social media content calendars to maintain consistent posting schedules.',
+                    'Uploaded and managed posts on Instagram, ensuring alignment with brand tone and campaign goals.',
+                    'Collaborated with the business owner to plan upcoming promotions and highlight key services.',
+                    'Monitored post performance and audience interactions to improve engagement strategies.'
                 ],
                 achievements: [
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
+                    'Produced 20+ high-quality Instagram posts with consistent design and tone within one month.',
+                    'Increased posting frequency and engagement by implementing a structured content schedule.',
+                    'Strengthened brand visibility through cohesive visual design and regular online activity.'
                 ],
-                skills: ['Social Media Marketing', 'Content Creation', 'Adobe Photoshop', 'Canva', 'Video Editing', 'Facebook Ads', 'Instagram Marketing', 'Analytics', 'Customer Service'],
+                skills: ['Social Media Marketing', 'Content Creation', 'Adobe Illustrator', 'Adobe Photoshop', 'Digital Marketing', 'Instagram Marketing', 'Content Scheduling', 'Brand Consistency', 'Customer Service'],
                 projects: [
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
-                    'lorem ipsum dolor sit amet',
+                    'Instagram campaign for haircut and shoe cleaning promotions',
+                    'Monthly content calendar and visual post templates'
                 ]
             },
             'Administrative Staff': {
