@@ -28,29 +28,67 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
     // Get detailed content based on service title
     const getServiceDetails = (title) => {
         const details = {
-            'Web design': {
-                fullDescription: 'Web development is the process of building, programming, and maintaining websites and web applications. It encompasses both front-end development (what users see and interact with) and back-end development (server-side logic and database management).',
-                technologies: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Next.js', 'Tailwind CSS', 'Node.js', 'Laravel'],
+            'Web Development': {
+                fullDescription: 'Web development involves designing, coding, and maintaining dynamic websites and web applications that deliver seamless functionality and engaging user experiences. I specialize in building efficient, scalable, and visually appealing sites using modern frameworks like Laravel, React, and Next.js, as well as CMS platforms such as WordPress and Elementor. My approach focuses on performance, responsive design, and clean architecture to ensure every project runs smoothly and meets client objectives.',
+                technologies: [
+                    'HTML5',
+                    'CSS3',
+                    'JavaScript',
+                    'React',
+                    'Next.js',
+                    'Tailwind CSS',
+                    'Node.js',
+                    'Laravel',
+                    'WordPress',
+                    'Elementor',
+                    'MySQL',
+                    'WordPress Plugins',
+                    'Theme Customization'
+                ],
                 features: [
                     'Responsive Design - Websites that work seamlessly across all devices',
-                    'Modern UI/UX - Clean, intuitive interfaces with smooth interactions',
-                    'Performance Optimization - Fast loading times and efficient code',
-                    'SEO Friendly - Built with search engine optimization in mind',
-                    'Cross-browser Compatibility - Consistent experience across all browsers'
+                    'Modern Interfaces - Clean, intuitive layouts with smooth user interactions',
+                    'Performance Optimization - Fast and efficient websites built with best coding practices',
+                    'SEO Friendly - Structured and optimized content for better search visibility',
+                    'Cross-browser Compatibility - Consistent experience across all browsers',
+                    'WordPress Customization - Template design, plugin integration, and easy content management'
                 ],
-                deliverables: ['Fully functional website', 'Source code', 'Documentation', 'Post-launch support']
+                deliverables: [
+                    'Fully functional website or web application',
+                    'Custom WordPress website with Elementor and plugins',
+                    'Responsive design templates',
+                    'Source code and documentation',
+                    'Deployment and post-launch support'
+                ]
             },
-            'Mobile app': {
-                fullDescription: 'Mobile app development involves creating software for mobile devices such as smartphones and tablets. This includes native apps for iOS and Android, as well as cross-platform solutions that work on multiple operating systems.',
-                technologies: ['Flutter', 'React Native', 'Dart', 'Firebase', 'SQLite', 'REST APIs', 'Push Notifications'],
-                features: [
-                    'Native Performance - Smooth, fast apps that feel native to the platform',
-                    'Cross-platform Development - Write once, deploy on iOS and Android',
-                    'Offline Functionality - Apps that work without internet connection',
-                    'Push Notifications - Keep users engaged with timely updates',
-                    'Cloud Integration - Seamless sync across devices'
+            'Mobile App Development': {
+                fullDescription: 'Mobile app development focuses on building high-performance, user-friendly applications that work seamlessly across Android and iOS devices. I develop cross-platform apps using Flutter and React Native, integrating clean interfaces, efficient data handling, and real-time connectivity. My focus is on functionality, performance, and seamless integration with APIs to deliver reliable mobile solutions for everyday use.',
+                technologies: [
+                    'Flutter',
+                    'React Native',
+                    'Dart',
+                    'JavaScript',
+                    'Firebase',
+                    'SQLite',
+                    'REST APIs',
+                    'JSON',
+                    'Push Notifications',
+                    'State Management (Provider, Riverpod, Redux)'
                 ],
-                deliverables: ['iOS and Android apps', 'Backend integration', 'App store deployment', 'Maintenance and updates']
+                features: [
+                    'Cross-platform Development - Create mobile apps for Android and iOS from a single codebase',
+                    'API Integration - Connect mobile apps with backend systems through RESTful APIs',
+                    'Offline Capability - Local data storage and synchronization using SQLite',
+                    'Realtime Connectivity - Seamless data sync and authentication with Firebase',
+                    'Clean Interface - Focus on simplicity, usability, and performance'
+                ],
+                deliverables: [
+                    'Fully functional mobile app for Android and iOS',
+                    'API-connected mobile interfaces',
+                    'Local database integration (SQLite)',
+                    'Firebase-enabled authentication and real-time data',
+                    'Source code and documentation for further deployment'
+                ]
             },
             'Administrative Services': {
                 fullDescription: 
@@ -84,17 +122,34 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                     'Document Templates and Checklists'
                 ]
             },
-            'Graphics design': {
-                fullDescription: 'Creative design solutions to enhance visual communication through compelling graphics, branding materials, and digital assets. From logos to marketing materials, I create designs that effectively communicate your message.',
-                technologies: ['Adobe Photoshop', 'Adobe Illustrator', 'Figma', 'Canva', 'InDesign', 'After Effects'],
-                features: [
-                    'Brand Identity - Logos, color palettes, and brand guidelines',
-                    'Marketing Materials - Flyers, posters, social media graphics',
-                    'Digital Assets - Icons, illustrations, and infographics',
-                    'Print Design - Business cards, brochures, and packaging',
-                    'Motion Graphics - Animated logos and explainer videos'
+            'Graphics Design': {
+                fullDescription: 'Graphic design focuses on creating visually engaging digital content for communication, promotion, and storytelling. I design social media visuals, marketing materials, and motion graphics that help brands and organizations deliver their message clearly and creatively. My approach emphasizes visual consistency, clarity, and attention to detail across every project.',
+                technologies: [
+                    'Adobe Photoshop',
+                    'Adobe Illustrator',
+                    'Canva',
+                    'Figma',
+                    'Adobe After Effects',
+                    'Adobe Premiere Pro',
+                    'CapCut',
+                    'DaVinci Resolve',
+                    'Google Slides / PowerPoint'
                 ],
-                deliverables: ['High-resolution files', 'Vector formats', 'Brand guidelines', 'Multiple variations']
+                features: [
+                    'Marketing Visuals - Digital banners, posters, and promotional materials for campaigns',
+                    'Social Media Design - Posts, stories, and content optimized for engagement',
+                    'Presentation Design - Visually impactful slide decks and reports',
+                    'Motion Graphics - Animated text, logo intros, and simple explainer videos',
+                    'Video Editing - Trimming, transitions, and color adjustments for short-form content',
+                    'Content Editing - Image enhancement and simple video compositions'
+                ],
+                deliverables: [
+                    'High-resolution graphics and exported videos (PNG, JPG, MP4)',
+                    'Editable source files (PSD, AI, AE, etc)',
+                    'Social media content packages',
+                    'Short promotional videos and animations',
+                    'Presentation or digital campaign assets'
+                ]
             }
         }
         
@@ -241,9 +296,9 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                                                 animate={{ opacity: 1, scale: 1 }}
                                                 transition={{ delay: 0.6 + index * 0.1, duration: 0.3 }}
                                                 whileHover={{ scale: 1.05 }}
-                                                className='p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-gray-700 dark:text-gray-300 text-sm flex items-center gap-2'
+                                                className='p-3 bg-gray-50 dark:bg-gray-800 rounded-lg text-gray-700 dark:text-gray-300 text-sm flex items-start gap-2'
                                             >
-                                                <div className='w-2 h-2 bg-blue-500 rounded-full'></div>
+                                                <div className='flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-1.5'></div>
                                                 {item}
                                             </motion.div>
                                         ))}
