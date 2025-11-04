@@ -304,138 +304,113 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                 featured: 5,
                 projects: [
                     {
-                        name: 'E-Commerce Platform',
-                        category: 'Full-Stack Web',
-                        description: 'A complete online shopping platform with product management, shopping cart, payment integration, and order tracking.',
-                        image: '/project-1.png',
-                        technologies: ['Laravel', 'React', 'MySQL', 'Stripe', 'Tailwind CSS'],
-                        features: [
-                            'User authentication & authorization',
-                            'Product catalog with search & filters',
-                            'Shopping cart & wishlist',
-                            'Payment gateway integration',
-                            'Order management system',
-                            'Admin dashboard for analytics'
-                        ],
-                        highlights: [
-                            '1000+ active users',
-                            '98% uptime reliability',
-                            'Responsive design for all devices',
-                            'SEO optimized'
-                        ],
-                        github: 'https://github.com/rendybp/ecommerce-platform',
-                        liveDemo: 'https://ecommerce-demo.rendybp.com',
-                        year: '2023',
-                        status: 'Live'
-                    },
-                    {
-                        name: 'Task Management App',
-                        category: 'Full-Stack Web',
-                        description: 'A collaborative task management application with real-time updates, team boards, and productivity analytics.',
-                        image: '/project-2.png',
-                        technologies: ['Next.js', 'Node.js', 'MongoDB', 'Socket.io', 'Redux'],
-                        features: [
-                            'Real-time collaboration',
-                            'Kanban board interface',
-                            'Task assignments & due dates',
-                            'File attachments & comments',
-                            'Team productivity analytics',
-                            'Email notifications'
-                        ],
-                        highlights: [
-                            'Real-time synchronization',
-                            '500+ daily active users',
-                            'Mobile-responsive interface',
-                            'Dark mode support'
-                        ],
-                        github: 'https://github.com/rendybp/task-manager',
-                        liveDemo: 'https://tasks.rendybp.com',
-                        year: '2023',
-                        status: 'Live'
-                    },
-                    {
-                        name: 'Social Media Dashboard',
-                        category: 'Frontend Web',
-                        description: 'An analytics dashboard for social media managers to track engagement, schedule posts, and monitor multiple platforms.',
-                        image: '/project-3.png',
-                        technologies: ['React', 'Chart.js', 'Tailwind CSS', 'Firebase', 'REST APIs'],
-                        features: [
-                            'Multi-platform integration',
-                            'Interactive data visualizations',
-                            'Post scheduling system',
-                            'Engagement metrics tracking',
-                            'Competitor analysis',
-                            'Export reports to PDF'
-                        ],
-                        highlights: [
-                            'Beautiful data visualizations',
-                            'Connect 5+ social platforms',
-                            'Real-time analytics',
-                            'Cloud-based storage'
-                        ],
-                        github: 'https://github.com/rendybp/social-dashboard',
-                        liveDemo: 'https://social.rendybp.com',
-                        year: '2022',
-                        status: 'Live'
-                    },
-                    {
-                        name: 'Weather Forecast App',
-                        category: 'Mobile App',
-                        description: 'A beautiful weather application with 7-day forecasts, weather alerts, and location-based recommendations.',
-                        image: '/project-4.png',
-                        technologies: ['Flutter', 'Dart', 'Weather API', 'Firebase', 'Provider'],
-                        features: [
-                            '7-day weather forecast',
-                            'Hourly updates',
-                            'Severe weather alerts',
-                            'Multiple location tracking',
-                            'Weather maps & radar',
-                            'Outfit recommendations'
-                        ],
-                        highlights: [
-                            'Available on iOS & Android',
-                            '10k+ downloads',
-                            'Offline mode support',
-                            '4.5★ average rating'
-                        ],
-                        github: 'https://github.com/rendybp/weather-app',
-                        liveDemo: 'https://play.google.com/store/apps/weather-rendi',
-                        year: '2022',
-                        status: 'Live'
-                    },
-                    {
                         name: 'Personal Portfolio Website',
                         category: 'Frontend Web',
-                        description: 'A modern, animated portfolio website showcasing my work, skills, and professional experience.',
-                        image: '/project-5.png',
+                        description:
+                        'A modern, responsive portfolio website built to showcase my professional experience, projects, and skills with smooth animations and a clean user interface.',
+                        image: '/project-1.png',
                         technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
                         features: [
-                            'Smooth scroll animations',
-                            'Interactive project modals',
-                            'Dark/Light theme toggle',
-                            'Contact form with validation',
-                            'Blog section for articles',
-                            'SEO optimized pages'
+                        'Smooth scroll and motion-based animations',
+                        'Interactive project detail modals',
+                        'Dark and light theme toggle',
+                        'Contact form with real-time validation'
                         ],
                         highlights: [
-                            'Lighthouse score: 95+',
-                            'Fully responsive design',
-                            'Smooth animations',
-                            'Fast loading times'
+                        'Lighthouse performance score above 95',
+                        'Fully responsive and cross-browser compatible',
+                        'Minimalist and fast-loading design',
+                        'Deployed using Vercel with continuous integration'
                         ],
-                        github: 'https://github.com/rendybp/portfolio',
-                        liveDemo: 'https://rendybp.com',
-                        year: '2024',
+                        github: 'https://github.com/rendybp/my-portfolio',
+                        liveDemo: 'https://rendibuana.me',
+                        year: '2025',
                         status: 'Live'
+                    },
+
+                    {
+                        name: 'Book Recommendation System',
+                        category: 'Full-Stack Web',
+                        description:
+                        'A content-based book recommendation system developed for SMP Negeri 1 Kartasura Library, combining TF-IDF and FastText to generate personalized book suggestions.',
+                        image: '/project-2.png',
+                        technologies: ['Laravel', 'Bootstrap', 'MySQL', 'Python', 'TF-IDF', 'FastText', 'FastAPI'],
+                        features: [
+                        'AI-based recommendation using TF-IDF and FastText word embeddings',
+                        'Integration between Laravel frontend and FastAPI backend',
+                        'Real-time book search and recommendation',
+                        'Dataset management and automatic model update',
+                        'API endpoint for similarity computation'
+                        ],
+                        highlights: [
+                        'Achieved 93% recommendation accuracy (based on evaluation dataset)',
+                        'Optimized for speed using pre-trained FastText model',
+                        'Supports dynamic updates without full retraining',
+                        'Bridges Laravel - Python integration seamlessly'
+                        ],
+                        github: 'https://github.com/rendybp/bookrecsys-railway',
+                        liveDemo: 'https://github.com/rendybp/bookrecsys-railway',
+                        year: '2025',
+                        status: 'Offline'
+                    },
+
+                    {
+                        name: 'Book Loan and Return System',
+                        category: 'Full-Stack Web',
+                        description:
+                        'A web-based library management system for handling book borrowing, returning, and fine management efficiently within school environments.',
+                        image: '/project-3.png',
+                        technologies: ['Laravel', 'PHP', 'JavaScript', 'MySQL', 'Bootstrap'],
+                        features: [
+                        'Online catalog and borrowing request system',
+                        'QR code-based book loan verification',
+                        'Automatic overdue and fine calculation',
+                        'Book return tracking and inventory updates',
+                        'Role-based user access for admin and librarian'
+                        ],
+                        highlights: [
+                        'Mobile-friendly and responsive interface',
+                        'Efficient data synchronization across user roles',
+                        'Improved record accuracy and time efficiency for staff'
+                        ],
+                        github: 'https://github.com/ikhsanmajid/ProjectAkhirPerpustakaan',
+                        liveDemo: 'https://github.com/ikhsanmajid/ProjectAkhirPerpustakaan',
+                        year: '2024',
+                        status: 'Offline'
+                    },
+
+                    {
+                        name: 'MR Collection App',
+                        category: 'Mobile App',
+                        description:
+                        'A mobile cataloging application for managing bag and accessory collections, featuring image upload, item descriptions, and offline capabilities.',
+                        image: '/project-4.png',
+                        technologies: ['Flutter', 'Dart', 'Firebase', 'Provider'],
+                        features: [
+                        'Image upload with Firebase Storage integration',
+                        'Item details with description, price, and category',
+                        'Search, filter, and sort functionalities',
+                        'User authentication with Firebase Auth',
+                        'Offline mode using local data persistence'
+                        ],
+                        highlights: [
+                        'Simple and intuitive UI/UX design',
+                        'Fast app performance and low memory usage',
+                        'Cross-platform compatibility for Android and iOS'
+                        ],
+                        github: 'https://github.com/rendybp/mr_collection',
+                        liveDemo: 'https://github.com/rendybp/mr_collection',
+                        year: '2023',
+                        status: 'Offline'
                     }
                 ],
                 statistics: {
-                    totalCommits: '2,500+',
-                    linesOfCode: '50,000+',
-                    openSourceContributions: '15+',
-                    githubStars: '150+'
+                    totalCommits: '200+',
+                    linesOfCode: '5000+',
+                    totalPullRequest: '15+',
+                    lastYearContributed: '2+'
                 },
-                technologies: ['React', 'Next.js', 'Laravel', 'Flutter', 'Node.js', 'MySQL', 'MongoDB', 'Tailwind CSS', 'Firebase']
+                technologies: ['React', 'Next.js', 'Laravel', 'Flutter', 'Node.js', 'MySQL', 'Tailwind CSS', 'Firebase', 'Python', 'JavaScript', 'PHP', 'Bootstrap']
             }
         }
         
