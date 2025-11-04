@@ -508,6 +508,37 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                     ))}
                 </div>
             </motion.div>
+            {/* Certifications */}
+            {details.certifications && details.certifications.length > 0 && (
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.85, duration: 0.4 }}
+                    className='mb-6'
+                >
+                    <h3 className='text-xl font-semibold text-gray-900 dark:text-white mb-3'>Certifications</h3>
+                    <div className='grid grid-cols-1 gap-3'>
+                        {details.certifications.map((cert, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, x: -10 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.9 + i * 0.05, duration: 0.3 }}
+                                className='p-3 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 flex items-center gap-3'
+                            >
+                                <div className='flex-shrink-0 w-9 h-9 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white font-semibold'>
+                                    <svg className='w-9 h-9' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
+                                        <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M9 12l2 2 4-4' />
+                                    </svg>
+                                </div>
+                                <div className='flex-1'>
+                                    <div className='font-semibold text-gray-900 dark:text-white text-sm'>{cert}</div>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </motion.div>
+            )}
         </>
     )
 
