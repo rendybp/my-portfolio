@@ -201,35 +201,40 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                 ]
             },
             'Education': {
-                fullTitle: 'Bachelor of Technology in Computer Science',
+                fullTitle: 'Bachelor of Computer Science',
                 subtitle: 'Academic Background & Achievements',
-                institution: 'University of Technology',
+                institution: 'Duta Bangsa University',
                 location: 'Surakarta, Central Java, Indonesia',
-                period: '2015 - 2019',
-                degree: 'Bachelor of Technology (B.Tech)',
-                major: 'Computer Science & Engineering',
-                grade: 'GPA: 3.7/4.0',
-                overview: 'Completed a comprehensive 4-year Bachelor\'s program in Computer Science, gaining strong foundational knowledge in algorithms, data structures, software engineering, and modern development practices. The program combined theoretical learning with practical project work.',
+                period: '2021 - 2025',
+                degree: 'Bachelor of Computer Science',
+                major: 'Informatics Engineering',
+                grade: 'GPA: 3.98/4.0',
+                overview: 'Completed a comprehensive 4-year Bachelor\'s program in Computer Science, developing strong foundations in algorithms, data structures, and modern software engineering practices. The curriculum combined theoretical study with hands-on projects across web, mobile, and AI technologies, fostering both analytical and creative problem-solving skills.',
                 coursework: [
                     {
                         category: 'Core Computer Science',
                         courses: [
+                            'Information System & Technology',
                             'Data Structures & Algorithms',
                             'Object-Oriented Programming',
                             'Database Management Systems',
                             'Operating Systems',
                             'Computer Networks',
-                            'Software Engineering'
+                            'Software Engineering',
+                            'Informatics Logic',
+                            'Control Systems',
                         ]
                     },
                     {
                         category: 'Web & Mobile Development',
                         courses: [
                             'Web Technologies',
-                            'Mobile Application Development',
+                            'Mobile Programming',
                             'Full-Stack Development',
                             'UI/UX Design Principles',
+                            'Visual Programming',
                             'RESTful API Design',
+                            'Python Programming',
                             'Cloud Computing'
                         ]
                     },
@@ -238,33 +243,36 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                         courses: [
                             'Machine Learning Fundamentals',
                             'Artificial Intelligence',
+                            'Internet of Things (IoT)',
+                            'Recommender Systems',
+                            'Data Mining',
                             'Cybersecurity Basics',
                             'Distributed Systems',
                             'Agile Software Development',
-                            'DevOps Practices'
+                            'Digital Image Processing'
                         ]
                     }
                 ],
                 achievements: [
                     {
-                        title: 'Dean\'s List',
-                        description: 'Maintained high academic standing for 6 consecutive semesters',
+                        title: '3rd Place - Koni National Science Competition II',
+                        description: 'Achieved 3rd place in a national-level English competition evaluating language proficiency, reading comprehension, and critical reasoning skills.',
                         icon: '🏆'
                     },
                     {
-                        title: 'Best Final Year Project',
-                        description: 'Awarded for innovative e-commerce platform with AI recommendations',
+                        title: 'Outstanding Student Award',
+                        description: 'Recognized as an Outstanding Student for excellence in academic performance and national achievement, combining strong technical and analytical abilities.',
                         icon: '🎓'
                     },
                     {
-                        title: 'Programming Competition',
-                        description: 'Secured 2nd place in inter-university coding competition',
-                        icon: '💻'
+                        title: 'Research Publication',
+                        description: 'Published a peer-reviewed national journal indexed in SINTA 4, focusing on the development of an AI-based book recommendation system using TF-IDF and FastText word embeddings.',
+                        icon: '📚'
                     },
                     {
-                        title: 'Research Publication',
-                        description: 'Co-authored paper on web optimization techniques',
-                        icon: '📚'
+                        title: 'BNSP Certification - Junior Web Programmer',
+                        description: 'Certified by the National Professional Certification Agency (BNSP) as a competent Junior Web Programmer, demonstrating verified expertise in modern web development and application design through national-level assessment.',
+                        icon: '💻'
                     }
                 ],
                 skills: [
@@ -278,16 +286,14 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                     'Research & analysis'
                 ],
                 activities: [
-                    'Computer Science Club - Technical Lead',
-                    'Coding Bootcamp Mentor for juniors',
-                    'Hackathon participant (5+ events)',
-                    'Tech talks and workshop organizer'
+                    'Computer Science Club',
+                    'Christian Student Fellowship'
                 ],
                 capstoneProject: {
-                    title: 'E-Commerce Platform with AI Product Recommendations',
-                    description: 'Developed a full-stack e-commerce web application with machine learning-based product recommendation system',
-                    technologies: ['Laravel', 'React', 'Python', 'MySQL', 'TensorFlow'],
-                    impact: 'Increased user engagement by 45% through personalized recommendations'
+                    title: 'Book Recommendation System Using the Vector Space Model Method Based on TF-IDF Weighting and FastText (Case Study: SMP Negeri 1 Kartasura Library)',
+                    description: 'Developed an intelligent book recommendation system for the school library that combines TF-IDF weighting with FastText word embeddings to measure semantic similarity between books. The system was integrated into a Laravel-based catalog website, enabling students to discover books more accurately based on their interests.',
+                    technologies: ['Laravel', 'Python', 'MySQL', 'TF-IDF', 'FastText', 'FastAPI'],
+                    impact: 'The system achieved an average accuracy of 93% in recommending relevant books, demonstrating the effectiveness of combining TF-IDF and FastText in capturing contextual meaning. This project contributes to improving library resource utilization and supports personalized learning within educational environments.'
                 }
             },
             'Projects': {

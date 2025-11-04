@@ -34,6 +34,7 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                     'HTML5',
                     'CSS3',
                     'JavaScript',
+                    'PHP',
                     'React',
                     'Next.js',
                     'Tailwind CSS',
