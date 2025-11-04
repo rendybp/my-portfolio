@@ -40,7 +40,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 name: 'HTML5',
                                 level: 'Expert',
                                 levelPercent: 95,
-                                experience: '5 years',
+                                experience: '8 years',
                                 description: 'Semantic markup, accessibility standards, SEO optimization',
                                 useCases: ['Responsive layouts', 'Web accessibility', 'SEO-friendly structure']
                             },
@@ -48,23 +48,23 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 name: 'CSS3',
                                 level: 'Expert',
                                 levelPercent: 95,
-                                experience: '5 years',
+                                experience: '8 years',
                                 description: 'Advanced animations, Grid, Flexbox, responsive design',
-                                useCases: ['Modern UI designs', 'Animations', 'Mobile-first approach']
+                                useCases: ['Modern UI designs', 'Smooth Animations', 'Mobile-first approach']
                             },
                             {
                                 name: 'JavaScript',
                                 level: 'Expert',
                                 levelPercent: 90,
-                                experience: '5 years',
-                                description: 'ES6+, async/await, DOM manipulation, API integration',
+                                experience: '7 years',
+                                description: 'ES6+, async/await, DOM handling, API integration',
                                 useCases: ['Interactive features', 'API calls', 'Dynamic content']
                             },
                             {
                                 name: 'React.js',
                                 level: 'Advanced',
                                 levelPercent: 85,
-                                experience: '3 years',
+                                experience: '2 years',
                                 description: 'Hooks, Context API, component lifecycle, state management',
                                 useCases: ['SPA development', 'Component libraries', 'Interactive dashboards']
                             },
@@ -72,17 +72,17 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 name: 'Next.js',
                                 level: 'Advanced',
                                 levelPercent: 85,
-                                experience: '2 years',
+                                experience: '1 year',
                                 description: 'SSR, SSG, API routes, file-based routing, optimization',
                                 useCases: ['Full-stack apps', 'SEO-optimized sites', 'Hybrid rendering']
                             },
                             {
                                 name: 'Tailwind CSS',
-                                level: 'Expert',
-                                levelPercent: 90,
-                                experience: '2 years',
+                                level: 'Advanced',
+                                levelPercent: 85,
+                                experience: '1 year',
                                 description: 'Utility-first CSS, custom configurations, responsive design',
-                                useCases: ['Rapid prototyping', 'Consistent designs', 'Custom themes']
+                                useCases: ['Rapid prototyping', 'Clean and consistent design', 'Responsive themes']
                             }
                         ]
                     },
@@ -92,10 +92,10 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                         technologies: [
                             {
                                 name: 'PHP',
-                                level: 'Advanced',
-                                levelPercent: 85,
-                                experience: '4 years',
-                                description: 'OOP, MVC patterns, API development, security best practices',
+                                level: 'Expert',
+                                levelPercent: 95,
+                                experience: '7 years',
+                                description: 'OOP, MVC structure, API development, security best practices',
                                 useCases: ['RESTful APIs', 'Server-side logic', 'Authentication systems']
                             },
                             {
@@ -103,24 +103,24 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 level: 'Advanced',
                                 levelPercent: 85,
                                 experience: '3 years',
-                                description: 'Eloquent ORM, migrations, middleware, authentication, queues',
+                                description: 'Eloquent ORM, routing, migrations, middleware, authentication',
                                 useCases: ['E-commerce platforms', 'CMS systems', 'Enterprise applications']
                             },
                             {
                                 name: 'Node.js',
                                 level: 'Intermediate',
                                 levelPercent: 70,
-                                experience: '2 years',
+                                experience: '1 year',
                                 description: 'Express.js, REST APIs, real-time applications',
-                                useCases: ['API servers', 'Real-time chat', 'Microservices']
+                                useCases: ['API servers', 'Real-time communication', 'Microservices']
                             },
                             {
                                 name: 'Python',
-                                level: 'Intermediate',
-                                levelPercent: 70,
-                                experience: '2 years',
-                                description: 'Django basics, scripting, automation, data processing',
-                                useCases: ['Automation scripts', 'Data analysis', 'Backend APIs']
+                                level: 'Advanced',
+                                levelPercent: 85,
+                                experience: '4 years',
+                                description: 'Data processing, automation, and backend integration using FastAPI',
+                                useCases: ['Automation scripts', 'AI integration', 'Backend APIs']
                             }
                         ]
                     },
@@ -132,32 +132,24 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 name: 'MySQL',
                                 level: 'Advanced',
                                 levelPercent: 85,
-                                experience: '4 years',
+                                experience: '7 years',
                                 description: 'Query optimization, indexing, relationships, transactions',
-                                useCases: ['Relational databases', 'Data modeling', 'Performance tuning']
-                            },
-                            {
-                                name: 'MongoDB',
-                                level: 'Intermediate',
-                                levelPercent: 65,
-                                experience: '1 year',
-                                description: 'NoSQL design, CRUD operations, aggregation pipelines',
-                                useCases: ['Flexible schemas', 'Document storage', 'Scalable data']
+                                useCases: ['Relational databases', 'Data modeling', 'Performance optimization']
                             },
                             {
                                 name: 'Git & GitHub',
                                 level: 'Advanced',
                                 levelPercent: 85,
-                                experience: '5 years',
-                                description: 'Version control, branching strategies, collaboration, CI/CD',
-                                useCases: ['Version control', 'Team collaboration', 'Code reviews']
+                                experience: '6 years',
+                                description: 'Version control, branching strategies, team collaboration',
+                                useCases: ['Version control', 'Collaboration', 'Code management']
                             },
                             {
                                 name: 'REST APIs',
                                 level: 'Advanced',
-                                levelPercent: 85,
-                                experience: '3 years',
-                                description: 'API design, authentication, documentation, best practices',
+                                levelPercent: 80,
+                                experience: '4 years',
+                                description: 'API architecture, authentication, documentation, best practices',
                                 useCases: ['Third-party integrations', 'Mobile backends', 'Microservices']
                             }
                         ]
@@ -170,7 +162,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 name: 'Flutter',
                                 level: 'Intermediate',
                                 levelPercent: 70,
-                                experience: '1 year',
+                                experience: '2 years',
                                 description: 'Widget system, state management, native features',
                                 useCases: ['Cross-platform apps', 'Mobile UI', 'Native performance']
                             },
@@ -178,7 +170,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 name: 'Dart',
                                 level: 'Intermediate',
                                 levelPercent: 70,
-                                experience: '1 year',
+                                experience: '2 years',
                                 description: 'Flutter ecosystem, async programming, OOP principles',
                                 useCases: ['Flutter development', 'Mobile logic', 'App architecture']
                             }
@@ -186,18 +178,16 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                     }
                 ],
                 learningJourney: [
-                    { year: '2017-2018', milestone: 'Started with HTML, CSS, and basic JavaScript' },
-                    { year: '2019', milestone: 'Learned PHP and MySQL for backend development' },
-                    { year: '2020', milestone: 'Mastered Laravel framework and built first production app' },
-                    { year: '2021-2022', milestone: 'Expanded to React.js and modern frontend development' },
-                    { year: '2023', milestone: 'Adopted Next.js and Tailwind CSS for full-stack projects' },
-                    { year: '2024', milestone: 'Exploring Flutter for mobile development and advanced patterns' }
+                    { year: '2017', milestone: 'Began coding with HTML, CSS, and basic JavaScript in vocational high school' },
+                    { year: '2018-2019', milestone: 'Learned PHP and MySQL for backend web development' },
+                    { year: '2021-2022', milestone: 'Expanded into Python and REST API development' },
+                    { year: '2023', milestone: 'Mastered Laravel and implemented MVC concepts in real projects' },
+                    { year: '2023', milestone: 'Explored Flutter for mobile app development and native integration' },
+                    { year: '2024', milestone: 'Focused on React.js and modern frontend development practices' },
+                    { year: '2025', milestone: 'Adopted Next.js and Tailwind CSS for advanced full-stack projects' },
                 ],
                 certifications: [
-                    'Web Development Fundamentals',
-                    'Advanced JavaScript Programming',
-                    'Laravel Framework Mastery',
-                    'React.js Professional Development'
+                    'BNSP Certification - Junior Web Programmer (2020, renewed 2025)',
                 ]
             },
             'Education': {
