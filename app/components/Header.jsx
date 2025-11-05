@@ -6,6 +6,26 @@ import React, { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from "motion/react"
 
 const Header = () => {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+    const dropdownRef = useRef(null)
+
+    // Close dropdown when clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsDropdownOpen(false)
+            }
+        }
+
+        if (isDropdownOpen) {
+            document.addEventListener('mousedown', handleClickOutside)
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside)
+        }
+    }, [isDropdownOpen])
+
     return (
         <div className='w-11/12 max-w-6xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 my-5'>
             <motion.div
@@ -43,15 +63,82 @@ const Header = () => {
                 whileInView={{y: 0, opacity: 1}}
                 transition={{duration: 0.6, delay: 1}}
                 href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-transparent'>Contact Me <Image src={assets.right_arrow_white} alt='' className='w-4'/></motion.a>
-
-                {/* Resume download with dropdown */}
+                
+                {/* Split CV Download Button */}
                 <motion.div
-                    initial={{y:30, opacity: 0}}
-                    whileInView={{y: 0, opacity: 1}}
-                    transition={{duration: 0.6, delay: 1.2}}
-                    className='relative'
+                initial={{y:30, opacity: 0}}
+                whileInView={{y: 0, opacity: 1}}
+                transition={{duration: 0.6, delay: 1.2}}
+                ref={dropdownRef}
+                className='relative'
                 >
-                    <ResumeDropdown />
+                    <div className='flex border rounded-full border-gray-500 bg-white overflow-hidden'>
+                        {/* Main Download Button - English CV */}
+                        <a 
+                            href="/resume-rendi-en.pdf" 
+                            download 
+                            className='pl-6 pr-[17px] py-3 flex items-center gap-2 dark:text-black hover:bg-gray-200 dark:hover:bg-gray-200 transition-colors'
+                        >
+                            My Resume 
+                            <Image src={assets.download_icon} alt='' className='w-4'/>
+                        </a>
+
+                        {/* Dropdown Toggle */}
+                        <button
+                            onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                            className='px-3 py-3 border-l border-gray-200 hover:bg-gray-200 transition-colors dark:text-black cursor-pointer'
+                        >
+                            <motion.svg 
+                                animate={{ rotate: isDropdownOpen ? 180 : 0 }}
+                                transition={{ duration: 0.3 }}
+                                className='w-4 h-4' 
+                                fill='none' 
+                                viewBox='0 0 24 24' 
+                                stroke='currentColor'
+                            >
+                                <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={2} d='M19 9l-7 7-7-7' />
+                            </motion.svg>
+                        </button>
+                    </div>
+
+                    {/* Dropdown Menu */}
+                    <AnimatePresence>
+                        {isDropdownOpen && (
+                            <motion.div
+                                initial={{ opacity: 0, y: -10, scale: 0.95 }}
+                                animate={{ opacity: 1, y: 0, scale: 1 }}
+                                exit={{ opacity: 0, y: -10, scale: 0.95 }}
+                                transition={{ duration: 0.2 }}
+                                className='absolute top-full mt-2 w-full bg-white border border-gray-300 rounded-xl shadow-lg overflow-hidden z-10'
+                            >
+                                <a
+                                    href="/resume-rendi-en.pdf"
+                                    download
+                                    className='flex items-center gap-3 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors border-b border-gray-200'
+                                    onClick={() => setIsDropdownOpen(false)}
+                                >
+                                    <span className='text-l dark:text-black'>EN</span>
+                                    <div className='flex-1'>
+                                        <div className='font-semibold text-gray-900 dark:text-gray-900 text-sm'>English Version</div>
+                                    </div>
+                                    <Image src={assets.download_icon} alt='' className='w-4'/>
+                                </a>
+
+                                <a
+                                    href="/resume-rendi-id.pdf"
+                                    download
+                                    className='flex items-center gap-3 px-4 py-3 hover:bg-gray-100 dark:hover:bg-gray-200 transition-colors'
+                                    onClick={() => setIsDropdownOpen(false)}
+                                >
+                                    <span className='text-l dark:text-black'>ID</span>
+                                    <div className='flex-1'>
+                                        <div className='font-semibold text-gray-900 dark:text-gray-900 text-sm'>Indonesian Version</div>
+                                    </div>
+                                    <Image src={assets.download_icon} alt='' className='w-4'/>
+                                </a>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </motion.div>
             </div>
         </div>
@@ -59,50 +146,3 @@ const Header = () => {
 }
 
 export default Header
-
-function ResumeDropdown(){
-    const [open, setOpen] = useState(false)
-    const ref = useRef(null)
-
-    useEffect(()=>{
-        function handleClick(e){
-            if(ref.current && !ref.current.contains(e.target)) setOpen(false)
-        }
-        function handleKey(e){
-            if(e.key === 'Escape') setOpen(false)
-        }
-        document.addEventListener('mousedown', handleClick)
-        document.addEventListener('keydown', handleKey)
-        return ()=>{
-            document.removeEventListener('mousedown', handleClick)
-            document.removeEventListener('keydown', handleKey)
-        }
-    },[])
-
-    return (
-        <div ref={ref} className='inline-block text-left'>
-            <button onClick={()=>setOpen(prev => !prev)} aria-haspopup='true' aria-expanded={open} className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'>
-                <span>My Resume</span>
-                <Image src={assets.download_icon} alt='' className='w-4'/>
-                <svg className={`w-4 h-4 transition-transform ${open ? 'rotate-180' : ''}`} viewBox='0 0 20 20' fill='currentColor' aria-hidden='true'>
-                    <path fillRule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.21 8.27a.75.75 0 01.02-1.06z' clipRule='evenodd' />
-                </svg>
-            </button>
-
-            <AnimatePresence>
-            {open && (
-                <motion.div
-                    initial={{ opacity: 0, y: -6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -6 }}
-                    transition={{ duration: 0.18 }}
-                    className='absolute right-0 mt-2 w-56 bg-white dark:bg-gray-800 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 z-50 overflow-hidden'
-                >
-                    <a href='/resume-rendi-en.pdf' download className='block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'>English (EN)</a>
-                    <a href='/resume-rendi-id.pdf' download className='block px-4 py-3 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700'>Indonesian (ID)</a>
-                </motion.div>
-            )}
-            </AnimatePresence>
-        </div>
-    )
-}
