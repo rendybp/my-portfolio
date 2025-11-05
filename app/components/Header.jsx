@@ -27,7 +27,7 @@ const Header = () => {
     }, [isDropdownOpen])
 
     return (
-        <div className='w-11/12 max-w-6xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 my-5'>
+        <div className='w-11/12 max-w-6xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 my-3 sm:gap-4 sm:my-5'>
             <motion.div
             initial={{scale: 0}}
             whileInView={{scale: 1}}
@@ -39,21 +39,21 @@ const Header = () => {
             initial={{y:-20, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.6, delay: 0.3}}
-            className='flex items-end gap-2 text-xl md:text-2xl font-ovo'>
+            className='flex items-end gap-2 text-md md:text-2xl font-ovo'>
                 Hi I'm Rendi Buana Perdana  <Image src={assets.hand_icon} alt='' className='w-6'/>
             </motion.h3>
             <motion.h1 
             initial={{y:-30, opacity: 0}}
             whileInView={{y: 0, opacity: 1}}
             transition={{duration: 0.8, delay: 0.5}}
-            className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>
+            className='text-xl sm:text-6xl lg:text-[66px] font-ovo'>
                 Web developer based in Indonesia
             </motion.h1>
             <motion.p 
             initial={{opacity: 0}}
             whileInView={{opacity: 1}}
             transition={{duration: 0.6, delay: 0.7}}
-            className='max-w-3xl mx-auto font-ovo'>
+            className='max-w-3xl mx-auto font-ovo text-sm sm:text-lg'>
                 I'm a web developer with a strong foundation in Laravel, JavaScript, and modern frameworks. With experience in both software development and finance administration, I'm passionate about creating efficient, user-friendly, and data-driven web solutions. My goal is to blend technology and precision to help organizations work smarter and achieve measurable results.
             </motion.p>
 

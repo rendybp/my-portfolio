@@ -36,7 +36,7 @@ body {
   --color-darkHover: #2a004a;
   --color-darkTheme: #11001f; */
   --color-lightHover: #fcf4ff;
-  --color-darkHover: #3B1C32;
+  --color-darkHover: #101828;
   --color-darkTheme: #1A1A1D;
 
   /* Fonts & Shadow */
@@ -54,7 +54,7 @@ body {
   --color-darkHover: #fcf4ff; */
   --color-bg: #1A1A1D;
   --color-text: #f5f5f5;
-  --color-lightHover: #3B1C32;
+  --color-lightHover: #101828;
   --color-darkHover: #fcf4ff;
 }
 
