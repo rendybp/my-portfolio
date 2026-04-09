@@ -42,6 +42,7 @@ import python_logo from './python_logo.png';
 import flutter_logo from './flutter_logo.png';
 import tailwindcss_logo from './tailwindcss_logo.png';
 import postman_logo from './postman_logo.png';
+import express_logo from './express_logo.png';
 import { link } from 'motion/react-client';
 
 export const assets = {
@@ -88,8 +89,8 @@ export const assets = {
     python_logo,
     flutter_logo,
     tailwindcss_logo,
-    postman_logo
-
+    postman_logo,
+    express_logo,
 };
 
 export const workData = [
@@ -136,6 +137,7 @@ export const toolsData = [
     {icon: assets.laravel_logo, link: 'https://laravel.com/'},
     {icon: assets.nextjs_logo, link: 'https://nextjs.org/'},
     {icon: assets.react_logo, link: 'https://reactjs.org/'},
+    {icon: assets.express_logo, link: 'https://www.expressjs.com/'},
     {icon: assets.tailwindcss_logo, link: 'https://tailwindcss.com/'},
     {icon: assets.python_logo, link: 'https://www.python.org/'},
     {icon: assets.flutter_logo, link: 'https://flutter.dev/'},
