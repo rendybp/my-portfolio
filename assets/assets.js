@@ -43,6 +43,7 @@ import flutter_logo from './flutter_logo.png';
 import tailwindcss_logo from './tailwindcss_logo.png';
 import postman_logo from './postman_logo.png';
 import express_logo from './express_logo.png';
+import qa_icon from './qa-icon.png';
 import { link } from 'motion/react-client';
 
 export const assets = {
@@ -91,6 +92,7 @@ export const assets = {
     tailwindcss_logo,
     postman_logo,
     express_logo,
+    qa_icon
 };
 
 export const workData = [
@@ -123,8 +125,8 @@ export const workData = [
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web Development', description: 'Web development involves designing, coding, and maintaining dynamic websites...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile App Development', description: 'Mobile app development focuses on building high-performance, user-friendly applications...', link: '' },
+    { icon: assets.qa_icon, title: 'Quality Assurance', description: 'Software Quality Assurance focuses on ensuring applications are reliable, secure, and perform...', link: '' },
     { icon: assets.admin_icon, title: 'Administrative Services', description: 'Administrative services focus on organizing, documenting, and managing daily operational...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics Design', description: 'Graphic design focuses on creating visually engaging digital content for communication, promotion...', link: '' },
 ]
 
 export const infoList = [
