@@ -120,6 +120,12 @@ export const workData = [
         bgImage: '/work-4.png',
         bgImageBIG: '/work-4-big.png',
     },
+    {
+        title: 'Fullstack Engineer',
+        description: 'PT Widya Inovasi Indonesia',
+        bgImage: '/work-5.png',
+        bgImageBIG: '/work-5-big.png',
+    },
 ]
 
 export const serviceData = [
