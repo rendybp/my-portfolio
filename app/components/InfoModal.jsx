@@ -10,12 +10,12 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
         const handleEscape = (e) => {
             if (e.key === 'Escape') onClose()
         }
-        
+
         if (isOpen) {
             document.addEventListener('keydown', handleEscape)
             document.body.style.overflow = 'hidden'
         }
-        
+
         return () => {
             document.removeEventListener('keydown', handleEscape)
             document.body.style.overflow = 'unset'
@@ -108,8 +108,8 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                             },
                             {
                                 name: 'Node.js',
-                                level: 'Intermediate',
-                                levelPercent: 70,
+                                level: 'Advanced',
+                                levelPercent: 85,
                                 experience: '1 year',
                                 description: 'Express.js, REST APIs, real-time applications',
                                 useCases: ['API servers', 'Real-time communication', 'Microservices']
@@ -121,6 +121,14 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 experience: '4 years',
                                 description: 'Data processing, automation, and backend integration using FastAPI',
                                 useCases: ['Automation scripts', 'AI integration', 'Backend APIs']
+                            },
+                            {
+                                name: 'TypeScript',
+                                level: 'Advanced',
+                                levelPercent: 80,
+                                experience: '2 years',
+                                description: 'Static typing, interfaces, enhanced developer tooling, and error catching',
+                                useCases: ['Large-scale React applications', 'Robust Express backend', 'Code maintainability']
                             }
                         ]
                     },
@@ -128,6 +136,14 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                         name: 'Database & Tools',
                         icon: '🗄️',
                         technologies: [
+                            {
+                                name: 'Git & GitHub',
+                                level: 'Expert',
+                                levelPercent: 95,
+                                experience: '6 years',
+                                description: 'Version control, branching strategies, team collaboration',
+                                useCases: ['Version control', 'Collaboration', 'Code management']
+                            },
                             {
                                 name: 'MySQL',
                                 level: 'Advanced',
@@ -137,20 +153,28 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 useCases: ['Relational databases', 'Data modeling', 'Performance optimization']
                             },
                             {
-                                name: 'Git & GitHub',
-                                level: 'Advanced',
-                                levelPercent: 85,
-                                experience: '6 years',
-                                description: 'Version control, branching strategies, team collaboration',
-                                useCases: ['Version control', 'Collaboration', 'Code management']
-                            },
-                            {
                                 name: 'REST APIs',
                                 level: 'Advanced',
                                 levelPercent: 80,
                                 experience: '4 years',
                                 description: 'API architecture, authentication, documentation, best practices',
                                 useCases: ['Third-party integrations', 'Mobile backends', 'Microservices']
+                            },
+                            {
+                                name: 'PostgreSQL',
+                                level: 'Intermediate',
+                                levelPercent: 70,
+                                experience: '1 year',
+                                description: 'Relational database management, complex queries, data integrity, and ORM integration',
+                                useCases: ['Enterprise applications', 'Spatial data integration', 'Scalable backend systems']
+                            },
+                            {
+                                name: 'Docker',
+                                level: 'Intermediate',
+                                levelPercent: 65,
+                                experience: '1 year',
+                                description: 'Application containerization, building images, managing isolated environments',
+                                useCases: ['Application deployment', 'Local development consistency', 'Microservices architecture']
                             }
                         ]
                     },
@@ -294,23 +318,134 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                 featured: 5,
                 projects: [
                     {
+                        name: 'Vehicle Tracker',
+                        category: 'Fullstack Web',
+                        description: 'A comprehensive real-time vehicle monitoring system built as a personal clone of an enterprise-level application. It features live tracking, event notifications, and secure authentication.',
+                        image: '/vehicle-tracker.png',
+                        technologies: [
+                            'React.js',
+                            'Express.js',
+                            'TypeScript',
+                            'PostgreSQL',
+                            'Prisma',
+                            'Swagger UI',
+                            'Tailwind CSS',
+                            'Leaflet',
+                            'Framer Motion',
+                            'WebSocket',
+                            'WebHooks',
+                            'Zustand',
+                            'JWT Auth'
+                        ],
+                        features: [
+                            'Live vehicle data monitoring (location, speed, fuel)',
+                            'Real-time data synchronization using WebSockets',
+                            'Interactive map visualization using Leaflet',
+                            'Instant system alerts configured via Webhooks',
+                            'Secure authentication and system authorization',
+                        ],
+                        highlights: [
+                            'Engineered real-time data flow with low latency',
+                            'Built a responsive UI with Framer Motion animations',
+                            'Implemented robust RESTful APIs with Express and Prisma',
+                            'Created comprehensive API documentation using Swagger UI'
+                        ],
+                        github: 'https://github.com/rendybp/vehicle-tracker',
+                        liveDemo: 'https://vehicle-tracker-web-six.vercel.app/',
+                        year: '2026',
+                        status: 'Live'
+                    },
+
+                    {
+                        name: 'Matador Tracker',
+                        category: 'Fullstack Web',
+                        description: 'An enterprise-grade IoT vehicle tracking application developed for PT Widya Inovasi Indonesia, enabling real-time monitoring of vehicle location, speed, and fuel consumption.',
+                        image: '/matador-tracker.png',
+                        technologies: [
+                            'React.js',
+                            'Express.js',
+                            'TypeScript',
+                            'PostgreSQL',
+                            'Prisma',
+                            'Swagger UI',
+                            'Tailwind CSS',
+                            'Leaflet',
+                            'Shadcn UI',
+                            'WebSocket',
+                            'WebHooks',
+                            'Zustand',
+                            'JWT Auth'
+                        ],
+                        features: [
+                            'Live vehicle data monitoring (location, speed, fuel)',
+                            'Real-time vehicle tracking via WebSockets',
+                            'Instant system alerts configured via Webhooks',
+                            'Secure authentication and system authorization',
+                            'Interactive and responsive map interface'
+                        ],
+                        highlights: [
+                            'Developed scalable backend services processing live IoT data',
+                            'Achieved 100% responsive design with Shadcn UI and Tailwind',
+                            'Collaborated cross-functionally for system optimization',
+                            'Maintained high data security standards'
+                        ],
+                        github: 'https://github.com/rendybp',
+                        liveDemo: 'https://widyamatador.com/',
+                        year: '2026',
+                        status: 'Private / Company Project'
+                    },
+
+                    {
+                        name: 'Super Admin Dashboard - Matador Tracker',
+                        category: 'Frontend Web',
+                        description: 'A centralized management dashboard for the Matador Tracker ecosystem, allowing super admins to efficiently manage users, IoT devices, organizations, and vehicle data.',
+                        image: '/super-admin.png',
+                        technologies: [
+                            'React.js',
+                            'TypeScript',
+                            'Tailwind CSS',
+                            'Leaflet',
+                            'Shadcn UI',
+                            'Zustand',
+                            'JWT Auth',
+                            'SWR',
+                            'Recharts'
+                        ],
+                        features: [
+                            'Comprehensive CRUD operations for users, devices, and organizations',
+                            'Vehicle data management and statistical visualization',
+                            'Advanced data fetching and caching with SWR',
+                            'Interactive charts and analytics using Recharts'
+                        ],
+                        highlights: [
+                            'Built a highly intuitive and complex management interface',
+                            'Optimized frontend performance and state management with Zustand',
+                            'Ensured seamless integration with the Matador Tracker backend APIs',
+                            'Implemented robust form validation using Zod and React Hook Form'
+                        ],
+                        github: 'https://github.com/rendybp',
+                        liveDemo: 'https://widyamatador.com/',
+                        year: '2026',
+                        status: 'Private / Company Project'
+                    },
+                    {
                         name: 'Personal Portfolio Website',
                         category: 'Frontend Web',
                         description:
-                        'A modern, responsive portfolio website built to showcase my professional experience, projects, and skills with smooth animations and a clean user interface.',
+                            'A modern, responsive portfolio website built to showcase my professional experience, projects, and skills with smooth animations and a clean user interface.',
                         image: '/project-1.png',
                         technologies: ['Next.js', 'Framer Motion', 'Tailwind CSS', 'Vercel'],
                         features: [
-                        'Smooth scroll and motion-based animations',
-                        'Interactive project detail modals',
-                        'Dark and light theme toggle',
-                        'Contact form with real-time validation'
+                            'Smooth scroll and motion-based animations',
+                            'Interactive project detail modals',
+                            'Dark and light theme toggle',
+                            'Contact form with real-time validation'
                         ],
                         highlights: [
-                        'Lighthouse performance score above 95',
-                        'Fully responsive and cross-browser compatible',
-                        'Minimalist and fast-loading design',
-                        'Deployed using Vercel with continuous integration'
+                            'Lighthouse performance score above 95',
+                            'Fully responsive and cross-browser compatible',
+                            'Minimalist and fast-loading design',
+                            'Deployed using Vercel with continuous integration'
                         ],
                         github: 'https://github.com/rendybp/my-portfolio',
                         liveDemo: 'https://rendibuana.me',
@@ -322,21 +457,21 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                         name: 'Book Recommendation System',
                         category: 'Full-Stack Web',
                         description:
-                        'A content-based book recommendation system developed for SMP Negeri 1 Kartasura Library, combining TF-IDF and FastText to generate personalized book suggestions.',
+                            'A content-based book recommendation system developed for SMP Negeri 1 Kartasura Library, combining TF-IDF and FastText to generate personalized book suggestions.',
                         image: '/project-2.png',
                         technologies: ['Laravel', 'Bootstrap', 'MySQL', 'Python', 'TF-IDF', 'FastText', 'FastAPI'],
                         features: [
-                        'AI-based recommendation using TF-IDF and FastText word embeddings',
-                        'Integration between Laravel frontend and FastAPI backend',
-                        'Real-time book search and recommendation',
-                        'Dataset management and automatic model update',
-                        'API endpoint for similarity computation'
+                            'AI-based recommendation using TF-IDF and FastText word embeddings',
+                            'Integration between Laravel frontend and FastAPI backend',
+                            'Real-time book search and recommendation',
+                            'Dataset management and automatic model update',
+                            'API endpoint for similarity computation'
                         ],
                         highlights: [
-                        'Achieved 93% recommendation accuracy (based on evaluation dataset)',
-                        'Optimized for speed using pre-trained FastText model',
-                        'Supports dynamic updates without full retraining',
-                        'Bridges Laravel - Python integration seamlessly'
+                            'Achieved 93% recommendation accuracy (based on evaluation dataset)',
+                            'Optimized for speed using pre-trained FastText model',
+                            'Supports dynamic updates without full retraining',
+                            'Bridges Laravel - Python integration seamlessly'
                         ],
                         github: 'https://github.com/rendybp/bookrecsys-railway',
                         liveDemo: 'https://github.com/rendybp/bookrecsys-railway',
@@ -348,20 +483,20 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                         name: 'Book Loan and Return System',
                         category: 'Full-Stack Web',
                         description:
-                        'A web-based library management system for handling book borrowing, returning, and fine management efficiently within school environments.',
+                            'A web-based library management system for handling book borrowing, returning, and fine management efficiently within school environments.',
                         image: '/project-3.png',
                         technologies: ['Laravel', 'PHP', 'JavaScript', 'MySQL', 'Bootstrap'],
                         features: [
-                        'Online catalog and borrowing request system',
-                        'QR code-based book loan verification',
-                        'Automatic overdue and fine calculation',
-                        'Book return tracking and inventory updates',
-                        'Role-based user access for admin and librarian'
+                            'Online catalog and borrowing request system',
+                            'QR code-based book loan verification',
+                            'Automatic overdue and fine calculation',
+                            'Book return tracking and inventory updates',
+                            'Role-based user access for admin and librarian'
                         ],
                         highlights: [
-                        'Mobile-friendly and responsive interface',
-                        'Efficient data synchronization across user roles',
-                        'Improved record accuracy and time efficiency for staff'
+                            'Mobile-friendly and responsive interface',
+                            'Efficient data synchronization across user roles',
+                            'Improved record accuracy and time efficiency for staff'
                         ],
                         github: 'https://github.com/ikhsanmajid/ProjectAkhirPerpustakaan',
                         liveDemo: 'https://github.com/ikhsanmajid/ProjectAkhirPerpustakaan',
@@ -373,20 +508,20 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                         name: 'MR Collection App',
                         category: 'Mobile App',
                         description:
-                        'A mobile cataloging application for managing bag and accessory collections, featuring image upload, item descriptions, and offline capabilities.',
+                            'A mobile cataloging application for managing bag and accessory collections, featuring image upload, item descriptions, and offline capabilities.',
                         image: '/project-4.png',
                         technologies: ['Flutter', 'Dart', 'Firebase', 'Provider'],
                         features: [
-                        'Image upload with Firebase Storage integration',
-                        'Item details with description, price, and category',
-                        'Search, filter, and sort functionalities',
-                        'User authentication with Firebase Auth',
-                        'Offline mode using local data persistence'
+                            'Image upload with Firebase Storage integration',
+                            'Item details with description, price, and category',
+                            'Search, filter, and sort functionalities',
+                            'User authentication with Firebase Auth',
+                            'Offline mode using local data persistence'
                         ],
                         highlights: [
-                        'Simple and intuitive UI/UX design',
-                        'Fast app performance and low memory usage',
-                        'Cross-platform compatibility for Android and iOS'
+                            'Simple and intuitive UI/UX design',
+                            'Fast app performance and low memory usage',
+                            'Cross-platform compatibility for Android and iOS'
                         ],
                         github: 'https://github.com/rendybp/mr_collection',
                         liveDemo: 'https://github.com/rendybp/mr_collection',
@@ -395,15 +530,15 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                     }
                 ],
                 statistics: {
-                    totalCommits: '200+',
-                    linesOfCode: '5000+',
-                    totalPullRequest: '15+',
-                    lastYearContributed: '2+'
+                    TotalCommits: '400+',
+                    LinesOfCode: '100000+',
+                    TotalPullRequest: '30+',
+                    TotalContributions: '480+'
                 },
-                technologies: ['React', 'Next.js', 'Laravel', 'Flutter', 'Node.js', 'MySQL', 'Tailwind CSS', 'Firebase', 'Python', 'JavaScript', 'PHP', 'Bootstrap']
+                technologies: ['React', 'Next.js', 'Express.js', 'Laravel', 'Flutter', 'Node.js', 'Prisma', 'MySQL', 'PostgreSQL', 'Tailwind CSS', 'Firebase', 'Python', 'Dart', 'JavaScript', 'TypeScript', 'PHP', 'Bootstrap', 'Swagger UI', 'Shadcn UI', 'Framer Motion', 'Leaflet', 'Zustand', 'JWT Auth', 'SWR', 'Recharts', 'WebSockets', 'WebHooks', 'TF-IDF', 'FastText', 'FastAPI']
             }
         }
-        
+
         return details[title] || details['Languages']
     }
 
@@ -456,7 +591,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                         {tech.level}
                                     </span>
                                 </div>
-                                
+
                                 {/* Progress Bar */}
                                 <div className='mb-2'>
                                     <div className='w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2'>
@@ -468,9 +603,9 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                         />
                                     </div>
                                 </div>
-                                
+
                                 <p className='text-sm text-gray-600 dark:text-gray-400 mb-2'>{tech.description}</p>
-                                
+
                                 <div className='flex flex-wrap gap-2'>
                                     {tech.useCases.map((useCase, i) => (
                                         <span key={i} className='text-xs px-2 py-1 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 rounded border border-gray-300 dark:border-gray-600'>
@@ -732,7 +867,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                 className='mb-6'
             >
                 <p className='text-gray-600 dark:text-gray-400 leading-relaxed mb-4'>{details.overview}</p>
-                
+
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
                     {Object.entries(details.statistics).map(([key, value], index) => (
                         <motion.div
@@ -759,7 +894,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                 className='space-y-5'
             >
                 <h3 className='text-xl font-semibold text-gray-900 dark:text-white mb-3'>Featured Projects</h3>
-                
+
                 {details.projects.map((project, index) => (
                     <motion.div
                         key={index}
@@ -835,7 +970,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                 className='flex-1 px-4 py-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg text-sm font-semibold hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors flex items-center justify-center gap-2'
                             >
                                 <svg className='w-4 h-4' fill='currentColor' viewBox='0 0 24 24'>
-                                    <path d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.840 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'/>
+                                    <path d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.840 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z' />
                                 </svg>
                                 GitHub
                             </motion.a>
@@ -902,11 +1037,11 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                             initial={{ scale: 0.8, opacity: 0, y: 50 }}
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.8, opacity: 0, y: 50 }}
-                            transition={{ 
-                                type: 'spring', 
-                                damping: 25, 
+                            transition={{
+                                type: 'spring',
+                                damping: 25,
                                 stiffness: 300,
-                                duration: 0.4 
+                                duration: 0.4
                             }}
                             className='relative w-full max-w-5xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl shadow-2xl pointer-events-auto p-3'
                         >
@@ -931,7 +1066,7 @@ const InfoModal = ({ isOpen, onClose, info, isDarkMode }) => {
                                     className='mb-6'
                                 >
                                     <div className='flex flex-col sm:flex-row items-start gap-4 mb-4'>
-                                        <motion.div 
+                                        <motion.div
                                             whileHover={{ rotate: 360 }}
                                             transition={{ duration: 0.6 }}
                                             className='flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg'
