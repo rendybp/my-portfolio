@@ -97,22 +97,10 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Web Developer',
-        description: 'ajakonline.com',
-        bgImage: '/work-1.png',
-        bgImageBIG: '/work-1-big.png',
-    },
-    {
-        title: 'Social Media Administrator',
-        description: 'Hitz Barbershop',
-        bgImage: '/work-2.png',
-        bgImageBIG: '/work-2-big.png',
-    },
-    {
-        title: 'Administrative Staff',
-        description: 'SMP Negeri 1 Kartasura',
-        bgImage: '/work-3.png',
-        bgImageBIG: '/work-3-big.png',
+        title: 'Fullstack Engineer',
+        description: 'PT Widya Inovasi Indonesia',
+        bgImage: '/work-5.png',
+        bgImageBIG: '/work-5-big.png',
     },
     {
         title: 'Finance Administrator',
@@ -121,11 +109,23 @@ export const workData = [
         bgImageBIG: '/work-4-big.png',
     },
     {
-        title: 'Fullstack Engineer',
-        description: 'PT Widya Inovasi Indonesia',
-        bgImage: '/work-5.png',
-        bgImageBIG: '/work-5-big.png',
+        title: 'Administrative Staff',
+        description: 'SMP Negeri 1 Kartasura',
+        bgImage: '/work-3.png',
+        bgImageBIG: '/work-3-big.png',
     },
+    {
+        title: 'Web Developer',
+        description: 'ajakonline.com',
+        bgImage: '/work-2.png',
+        bgImageBIG: '/work-2-big.png',
+    },
+    {
+        title: 'Social Media Administrator',
+        description: 'Hitz Barbershop',
+        bgImage: '/work-1.png',
+        bgImageBIG: '/work-1-big.png',
+    }
 ]
 
 export const serviceData = [
