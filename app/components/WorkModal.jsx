@@ -10,12 +10,12 @@ const WorkModal = ({ isOpen, onClose, work }) => {
         const handleEscape = (e) => {
             if (e.key === 'Escape') onClose()
         }
-        
+
         if (isOpen) {
             document.addEventListener('keydown', handleEscape)
             document.body.style.overflow = 'hidden'
         }
-        
+
         return () => {
             document.removeEventListener('keydown', handleEscape)
             document.body.style.overflow = 'unset'
@@ -50,7 +50,7 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                     'Contributed to increasing client engagement through effective design, content optimization, and clear navigation.'
                 ],
 
-                skills: ['Web Development', 'Web Design', 'WordPress', 'WordPress Design', 'WordPress Theme Customization', 'Elementor', 'LandingPress', 'WooCommerce', 'SEO Basics', 'Plugin Configuration', 'HTML', 'CSS',  'Content Management', 'Image Editing', 'Digital Marketing'],
+                skills: ['Web Development', 'Web Design', 'WordPress', 'WordPress Design', 'WordPress Theme Customization', 'Elementor', 'LandingPress', 'WooCommerce', 'SEO Basics', 'Plugin Configuration', 'HTML', 'CSS', 'Content Management', 'Image Editing', 'Digital Marketing'],
                 projects: [
                     'Kenyang Pet - Online Pet Store Website',
                     'Djogja Enjoy Transport & Tour Website',
@@ -170,9 +170,53 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                     'Compilation of Tax Reporting and Accountability Documentation',
                     'Financial Audit Preparation and Compliance Documentation',
                 ]
+            },
+            'Fullstack Engineer': {
+                company: 'PT Widya Inovasi Indonesia',
+                period: 'Nov 2025 - May 2026',
+                duration: '6 months',
+                employmentType: 'Internship',
+                location: 'Sleman, Yogyakarta, Indonesia',
+                overview: 'Contributed as a Full Stack Engineer Intern to develop a real-time vehicle tracking system integrating IoT devices and WebSocket technology. Handled both frontend and backend development using React.js and Express.js, delivering responsive interfaces and robust API services. Collaborated cross-functionally to design efficient data structures, optimize system performance, and ensure scalable, reliable software solutions.',
+                responsibilities: [
+                    'Developed a real-time vehicle tracking system using IoT devices and WebSocket technology to monitor live vehicle data such as location, speed, and fuel consumption.',
+                    'Built high-performance, 100% responsive frontend interfaces using React.js, Tailwind CSS, and Shadcn UI to ensure optimal user experience across mobile and desktop.',
+                    'Developed robust backend services using Express.js and TypeScript, building RESTful APIs for seamless data communication and system integration.',
+                    'Developed real-time data flow by implementing WebSockets for continuous live tracking and configuring Webhooks for instant notifications.',
+                    'Integrated interactive maps using Leaflet and smooth UI animations using Framer Motion to enhance data visualization.',
+                    'Collaborated with cross-functional teams to design efficient database structures using PostgreSQL and Prisma ORM.',
+                    'Conducted thorough testing, debugging, and deployment procedures to ensure application scalability and a bug-free environment.'
+                ],
+                achievements: [
+                    'Successfully delivered a fully functional real-time vehicle tracking system capable of processing live IoT data with minimal latency via WebSockets.',
+                    'Achieved 100% responsive design for frontend interfaces, significantly improving cross-device usability and accessibility.',
+                    'Designed scalable database architectures and RESTful APIs that optimized backend system performance and data retrieval speed.',
+                    'Enhanced overall project maintainability and developer experience by implementing strict typing with TypeScript and comprehensive API documentation using Swagger UI.'
+                ],
+                skills: [
+                    'React.js',
+                    'Express.js',
+                    'Prisma',
+                    'PostgreSQL',
+                    'Swagger UI',
+                    'TypeScript',
+                    'Tailwind CSS',
+                    'Leaflet',
+                    'Framer Motion',
+                    'Shadcn UI',
+                    'Zustand',
+                    'JWT Auth',
+                    'WebSocket',
+                    'Webhooks'
+                ],
+                projects: [
+                    'Vehicle Tracker',
+                    'Matador Tracker',
+                    'Superadmin Page for Matador Tracker'
+                ]
             }
         }
-        
+
         return details[title] || details['Web Developer']
     }
 
@@ -198,11 +242,11 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                             initial={{ scale: 0.8, opacity: 0, y: 50 }}
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.8, opacity: 0, y: 50 }}
-                            transition={{ 
-                                type: 'spring', 
-                                damping: 25, 
+                            transition={{
+                                type: 'spring',
+                                damping: 25,
                                 stiffness: 300,
-                                duration: 0.4 
+                                duration: 0.4
                             }}
                             className='relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl shadow-2xl pointer-events-auto p-3'
                         >
@@ -227,13 +271,13 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                                     className='relative mb-6'
                                 >
                                     {/* Background Banner */}
-                                    <div 
+                                    <div
                                         className='h-32 lg:h-48 rounded-xl bg-cover bg-center relative overflow-hidden'
-                                        style={{backgroundImage: `url(${work.bgImageBIG})`}}
+                                        style={{ backgroundImage: `url(${work.bgImageBIG})` }}
                                     >
                                         <div className='absolute inset-0 bg-gradient-to-t from-black/70 to-black/20'></div>
                                     </div>
-                                    
+
                                     {/* Title Info */}
                                     <div className='mt-4'>
                                         <h2 className='text-3xl font-bold text-gray-900 dark:text-white mb-2'>{work.title}</h2>
@@ -305,7 +349,7 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                                                 transition={{ delay: 0.4 + index * 0.05, duration: 0.3 }}
                                                 className='flex items-start gap-3 text-gray-600 dark:text-gray-400'
                                             >
-                                                <motion.div 
+                                                <motion.div
                                                     whileHover={{ scale: 1.2 }}
                                                     className='flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2'
                                                 />
@@ -334,7 +378,7 @@ const WorkModal = ({ isOpen, onClose, work }) => {
                                                 className='p-4 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-lg border border-green-200 dark:border-green-800'
                                             >
                                                 <div className='flex items-start gap-3'>
-                                                    <motion.div 
+                                                    <motion.div
                                                         whileHover={{ rotate: 360 }}
                                                         transition={{ duration: 0.5 }}
                                                         className='flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center'

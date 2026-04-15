@@ -11,12 +11,12 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
         const handleEscape = (e) => {
             if (e.key === 'Escape') onClose()
         }
-        
+
         if (isOpen) {
             document.addEventListener('keydown', handleEscape)
             document.body.style.overflow = 'hidden'
         }
-        
+
         return () => {
             document.removeEventListener('keydown', handleEscape)
             document.body.style.overflow = 'unset'
@@ -91,8 +91,42 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                     'Source code and documentation for further deployment'
                 ]
             },
+            'Quality Assurance': {
+                fullDescription: 'Software Quality Assurance focuses on ensuring applications are reliable, secure, and perform flawlessly under various conditions. Leveraging my strong coding fundamentals, I implement comprehensive testing strategies covering both functional and non-functional requirements. My approach integrates automated, manual, performance, and security testing to validate data integrity, identify vulnerabilities, and advocate for the best possible user experience from development to deployment.',
+                technologies: [
+                    'Selenium',
+                    'Cypress',
+                    'Katalon',
+                    'Appium (Mobile Automation)',
+                    'PyTest',
+                    'REST Assured',
+                    'Postman',
+                    'K6 / JMeter (Performance Testing)',
+                    'Qase.io',
+                    'Jira / Trello',
+                    'Git / GitHub Actions',
+                    // 'Cucumber (BDD)'
+                ],
+                features: [
+                    'Automated & Manual Testing - Developing robust E2E test scripts and performing exploratory testing across web and mobile applications',
+                    'Non-Functional Testing - Conducting performance and load testing to ensure system scalability and stability under heavy traffic',
+                    'API & Database Testing - Verifying data flow, server responses, and database transaction integrity using industry-standard tools',
+                    'Security Testing - Identifying fundamental vulnerabilities to ensure secure endpoints and data protection',
+                    'Bug Advocacy - Effectively reporting, tracking, and prioritizing defects to champion quality and user satisfaction',
+                    // 'Behavior-Driven Development (BDD) - Translating business requirements into clear, executable test scenarios'
+                ],
+                deliverables: [
+                    'Automated test scripts (Web, Mobile, and API)',
+                    'API testing collections and documentation',
+                    'Performance, load, and security assessment reports',
+                    'Comprehensive test cases and execution logs',
+                    'Structured test management and execution tracking via Qase.io/Jira',
+                    'Detailed bug reports and release readiness documentation'
+                    // 'Comprehensive test plans and BDD scenarios',
+                ]
+            },
             'Administrative Services': {
-                fullDescription: 
+                fullDescription:
                     'Administrative services focus on organizing, documenting, and managing daily operational tasks within an organization. I help businesses, schools, or professionals streamline their administrative workflows through accurate data processing, well-structured documentation, and efficient digital tools that ensure clarity and productivity.',
 
                 technologies: [
@@ -122,38 +156,9 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                     'Presentation Slides and Reports',
                     'Document Templates and Checklists'
                 ]
-            },
-            'Graphics Design': {
-                fullDescription: 'Graphic design focuses on creating visually engaging digital content for communication, promotion, and storytelling. I design social media visuals, marketing materials, and motion graphics that help brands and organizations deliver their message clearly and creatively. My approach emphasizes visual consistency, clarity, and attention to detail across every project.',
-                technologies: [
-                    'Adobe Photoshop',
-                    'Adobe Illustrator',
-                    'Canva',
-                    'Figma',
-                    'Adobe After Effects',
-                    'Adobe Premiere Pro',
-                    'CapCut',
-                    'DaVinci Resolve',
-                    'Google Slides / PowerPoint'
-                ],
-                features: [
-                    'Marketing Visuals - Digital banners, posters, and promotional materials for campaigns',
-                    'Social Media Design - Posts, stories, and content optimized for engagement',
-                    'Presentation Design - Visually impactful slide decks and reports',
-                    'Motion Graphics - Animated text, logo intros, and simple explainer videos',
-                    'Video Editing - Trimming, transitions, and color adjustments for short-form content',
-                    'Content Editing - Image enhancement and simple video compositions'
-                ],
-                deliverables: [
-                    'High-resolution graphics and exported videos (PNG, JPG, MP4)',
-                    'Editable source files (PSD, AI, AE, etc)',
-                    'Social media content packages',
-                    'Short promotional videos and animations',
-                    'Presentation or digital campaign assets'
-                ]
             }
         }
-        
+
         return details[title] || details['Web design']
     }
 
@@ -179,11 +184,11 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                             initial={{ scale: 0.8, opacity: 0, y: 50 }}
                             animate={{ scale: 1, opacity: 1, y: 0 }}
                             exit={{ scale: 0.8, opacity: 0, y: 50 }}
-                            transition={{ 
-                                type: 'spring', 
-                                damping: 25, 
+                            transition={{
+                                type: 'spring',
+                                damping: 25,
                                 stiffness: 300,
-                                duration: 0.4 
+                                duration: 0.4
                             }}
                             className='relative w-full max-w-3xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-900 rounded-2xl shadow-2xl pointer-events-auto p-3'
                         >
@@ -207,7 +212,7 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                                     transition={{ delay: 0.1, duration: 0.4 }}
                                     className='flex flex-col sm:flex-row items-start gap-4 mb-6'
                                 >
-                                    <motion.div 
+                                    <motion.div
                                         whileHover={{ rotate: 360 }}
                                         transition={{ duration: 0.6 }}
                                         className='flex-shrink-0 w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg'
@@ -263,7 +268,7 @@ const ServiceModal = ({ isOpen, onClose, service }) => {
                                                     transition={{ delay: 0.4 + index * 0.1, duration: 0.3 }}
                                                     className='flex items-start gap-3'
                                                 >
-                                                    <motion.div 
+                                                    <motion.div
                                                         whileHover={{ scale: 1.2 }}
                                                         className='flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mt-0.5'
                                                     >

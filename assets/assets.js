@@ -42,6 +42,8 @@ import python_logo from './python_logo.png';
 import flutter_logo from './flutter_logo.png';
 import tailwindcss_logo from './tailwindcss_logo.png';
 import postman_logo from './postman_logo.png';
+import express_logo from './express_logo.png';
+import qa_icon from './qa-icon.png';
 import { link } from 'motion/react-client';
 
 export const assets = {
@@ -88,22 +90,23 @@ export const assets = {
     python_logo,
     flutter_logo,
     tailwindcss_logo,
-    postman_logo
-
+    postman_logo,
+    express_logo,
+    qa_icon
 };
 
 export const workData = [
     {
-        title: 'Web Developer',
-        description: 'ajakonline.com',
-        bgImage: '/work-1.png',
-        bgImageBIG: '/work-1-big.png',
+        title: 'Fullstack Engineer',
+        description: 'PT Widya Inovasi Indonesia',
+        bgImage: '/work-5.png',
+        bgImageBIG: '/work-5-big.png',
     },
     {
-        title: 'Social Media Administrator',
-        description: 'Hitz Barbershop',
-        bgImage: '/work-2.png',
-        bgImageBIG: '/work-2-big.png',
+        title: 'Finance Administrator',
+        description: 'SMP Negeri 1 Kartasura',
+        bgImage: '/work-4.png',
+        bgImageBIG: '/work-4-big.png',
     },
     {
         title: 'Administrative Staff',
@@ -112,18 +115,24 @@ export const workData = [
         bgImageBIG: '/work-3-big.png',
     },
     {
-        title: 'Finance Administrator',
-        description: 'SMP Negeri 1 Kartasura',
-        bgImage: '/work-4.png',
-        bgImageBIG: '/work-4-big.png',
+        title: 'Web Developer',
+        description: 'ajakonline.com',
+        bgImage: '/work-2.png',
+        bgImageBIG: '/work-2-big.png',
     },
+    {
+        title: 'Social Media Administrator',
+        description: 'Hitz Barbershop',
+        bgImage: '/work-1.png',
+        bgImageBIG: '/work-1-big.png',
+    }
 ]
 
 export const serviceData = [
     { icon: assets.web_icon, title: 'Web Development', description: 'Web development involves designing, coding, and maintaining dynamic websites...', link: '' },
     { icon: assets.mobile_icon, title: 'Mobile App Development', description: 'Mobile app development focuses on building high-performance, user-friendly applications...', link: '' },
+    { icon: assets.qa_icon, title: 'Quality Assurance', description: 'Software Quality Assurance focuses on ensuring applications are reliable, secure, and perform...', link: '' },
     { icon: assets.admin_icon, title: 'Administrative Services', description: 'Administrative services focus on organizing, documenting, and managing daily operational...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics Design', description: 'Graphic design focuses on creating visually engaging digital content for communication, promotion...', link: '' },
 ]
 
 export const infoList = [
@@ -136,6 +145,7 @@ export const toolsData = [
     {icon: assets.laravel_logo, link: 'https://laravel.com/'},
     {icon: assets.nextjs_logo, link: 'https://nextjs.org/'},
     {icon: assets.react_logo, link: 'https://reactjs.org/'},
+    {icon: assets.express_logo, link: 'https://www.expressjs.com/'},
     {icon: assets.tailwindcss_logo, link: 'https://tailwindcss.com/'},
     {icon: assets.python_logo, link: 'https://www.python.org/'},
     {icon: assets.flutter_logo, link: 'https://flutter.dev/'},
